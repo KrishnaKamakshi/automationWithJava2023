@@ -69,6 +69,7 @@ public class testCreateUsers {
         Response response2= res.when().put("/api/users/2")
                 .then().spec(respSpecPut).extract().response();
         System.out.println(response2.getBody().prettyPrint());
+        System.out.println("Pushed");
     }
 
     @Test
