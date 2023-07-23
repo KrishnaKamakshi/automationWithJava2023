@@ -2,12 +2,15 @@ package POJOLearnings;
 
 import ResourceConstants.APIConstant;
 import RestReqWebsiteAPIs.CreateUsersTest;
+import RestReqWebsiteAPIs.LoginSuccessFul;
 import RestReqWebsiteAPIs.ResponseOfCreateUsers;
 import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import org.asynchttpclient.RequestBuilder;
 import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
@@ -50,6 +53,22 @@ public class testCreateUsers {
     }
 
     @Test
+    public void testLogin()
+    {
+        RequestSpecification reqresT = new RequestSpecBuilder().
+                setBaseUri("https://reqres.in").build();
+        LoginSuccessFul loginSuccess = new LoginSuccessFul();
+        loginSuccess.setEmail("eve.holt@reqres.in");
+        loginSuccess.setPassword("cityslicka");
+        RequestSpecification reqPOST = given().spec(reqresT).header("Content-Type", "application/json").body(loginSuccess);
+        System.out.println(reqPOST.log().all());
+        ResponseSpecification responsePOST = new ResponseSpecBuilder().expectStatusCode(200).build();
+        Response responsePOST2 = reqPOST.when().
+                post("/api/login").then().log().all().spec(responsePOST).extract().response();
+        System.out.println(responsePOST2.getBody().prettyPrint());
+    }
+
+    @Test
     public void testPutMethodWithSpec()
     {
         /*
@@ -75,12 +94,17 @@ public class testCreateUsers {
     @Test
     public void testGetMethod()
     {
-        RestAssured.baseURI = "https://demoqa.com/BookStore/v1/Books";
-        RequestSpecification httpRequest = RestAssured.given();
-        Response response = httpRequest.request(Method.GET, "");
-        System.out.println("Status received => " + response.getStatusLine());
-        System.out.println("Response=>" + response.prettyPrint());
-    }
+        /*Building Base URI*/
+        RequestSpecification booksDemoQA = new RequestSpecBuilder().
+                setBaseUri("https://demoqa.com").build();
+        /*Assigning BaseURI*/
+        RequestSpecification resGet = given().log().all().spec(booksDemoQA);
+        /*Building StatusCode*/
+        ResponseSpecification responseGet = new ResponseSpecBuilder().expectStatusCode(200).build();
+        Response getResponse = resGet.when().get("/BookStore/v1/Books").then().log().all().spec(responseGet).extract().response();
+        System.out.println("----------------------------------------");
+        System.out.println(getResponse.getBody().asPrettyString());
 
+    }
 
 }

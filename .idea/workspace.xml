@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="805c153b-d245-4460-a3b0-a7eaa83071f3" name="Changes" comment="" />
+    <list default="true" id="805c153b-d245-4460-a3b0-a7eaa83071f3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/POJOLearnings/testCreateUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POJOLearnings/testCreateUsers.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,7 +41,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "azure-pipelines-07232023",
     "last_opened_file_path": "D:/08072023/githubCode/automationWithJava",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -40,7 +49,7 @@
     "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.testReqResListUsersExample.getTestListOfUsers">
+  <component name="RunManager" selected="TestNG.testCreateUsers.testLogin">
     <configuration name="CompareTwoLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javaPrograms.CompareTwoLists" />
       <module name="mavenProjectTest" />
@@ -67,6 +76,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testCreateUsers.testLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mavenProjectTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="POJOLearnings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="POJOLearnings" />
+      <option name="MAIN_CLASS_NAME" value="POJOLearnings.testCreateUsers" />
+      <option name="METHOD_NAME" value="testLogin" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="testReqResListUsersExample.getTestListOfUsers" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mavenProjectTest" />
       <extension name="coverage">
@@ -87,6 +114,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.testCreateUsers.testLogin" />
         <item itemvalue="TestNG.testReqResListUsersExample.getTestListOfUsers" />
         <item itemvalue="Application.CompareTwoLists" />
       </list>
