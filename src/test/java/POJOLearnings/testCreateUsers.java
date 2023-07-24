@@ -67,7 +67,6 @@ public class testCreateUsers {
                 post("/api/login").then().log().all().spec(responsePOST).extract().response();
         System.out.println(responsePOST2.getBody().prettyPrint());
     }
-
     @Test
     public void testPutMethodWithSpec()
     {
@@ -103,8 +102,9 @@ public class testCreateUsers {
         ResponseSpecification responseGet = new ResponseSpecBuilder().expectStatusCode(200).build();
         Response getResponse = resGet.when().get("/BookStore/v1/Books").then().log().all().spec(responseGet).extract().response();
         System.out.println("----------------------------------------");
-        System.out.println(getResponse.getBody().asPrettyString());
-
+        System.out.println(getResponse
+                .getBody().
+                asPrettyString());
     }
 
 }
