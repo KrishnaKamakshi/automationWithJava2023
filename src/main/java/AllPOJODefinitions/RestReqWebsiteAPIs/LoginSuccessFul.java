@@ -1,4 +1,4 @@
-package RestReqWebsiteAPIs;
+package AllPOJODefinitions.RestReqWebsiteAPIs;
 
 public class LoginSuccessFul {
     public String getEmail() {

@@ -1,21 +1,16 @@
 package POJOLearnings;
 
 import ResourceConstants.APIConstant;
-import RestReqWebsiteAPIs.CreateUsersTest;
-import RestReqWebsiteAPIs.LoginSuccessFul;
-import RestReqWebsiteAPIs.ResponseOfCreateUsers;
+import AllPOJODefinitions.RestReqWebsiteAPIs.*;
+import AllPOJODefinitions.RestReqWebsiteAPIs.LoginSuccessFul;
+import AllPOJODefinitions.RestReqWebsiteAPIs.ResponseOfCreateUsers;
 import io.restassured.builder.RequestSpecBuilder;
-import io.restassured.builder.ResponseBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
-import org.asynchttpclient.RequestBuilder;
 import org.testng.annotations.Test;
-import io.restassured.RestAssured;
-import io.restassured.http.Method;
-import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
+
 
 import static io.restassured.RestAssured.given;
 

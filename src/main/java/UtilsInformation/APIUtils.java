@@ -9,14 +9,17 @@ import java.util.Properties;
 
 public class APIUtils {
     RequestSpecification req;
-    public RequestSpecification requestBuilder() throws IOException {
+    public RequestSpecification requestBuilder(String keyName) throws IOException {
         PrintStream stream = new PrintStream(new FileOutputStream("src/test/resources/loggingFile/logRunTimeFile.log"));
-        req = new RequestSpecBuilder().
-                setBaseUri(getGlobalProp("baseURl")).
-                addFilter(RequestLoggingFilter.logRequestTo(stream)).
-                addFilter(
-                        RequestLoggingFilter.logRequestTo(stream)
-                ).build();
+        if (req==null) {
+            req = new RequestSpecBuilder().
+                    setBaseUri(getGlobalProp(keyName)).
+                    addFilter(RequestLoggingFilter.logRequestTo(stream)).
+                    addFilter(
+                            RequestLoggingFilter.logRequestTo(stream)
+                    ).build();
+            return req;
+        }
         return req;
     }
 

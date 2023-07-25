@@ -1,4 +1,4 @@
-package EcommerceAPIsPOJO;
+package AllPOJODefinitions.EcommerceAPIsPOJO;
 
 public class LoginResponse {
     public String getToken() {

@@ -1,4 +1,4 @@
-package RestReqWebsiteAPIs;
+package AllPOJODefinitions.RestReqWebsiteAPIs;
 
 public class DataUsers {
     public int getId() {

@@ -1,4 +1,4 @@
-package RestReqWebsiteAPIs;
+package AllPOJODefinitions.RestReqWebsiteAPIs;
 
 public class SupportClass {
     public String getUrl() {

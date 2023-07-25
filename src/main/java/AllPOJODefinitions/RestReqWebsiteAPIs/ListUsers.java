@@ -1,4 +1,4 @@
-package RestReqWebsiteAPIs;
+package AllPOJODefinitions.RestReqWebsiteAPIs;
 
 import java.util.List;
 

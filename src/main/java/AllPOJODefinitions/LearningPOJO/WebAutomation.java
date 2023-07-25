@@ -1,6 +1,4 @@
-package LearningPOJO;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
+package AllPOJODefinitions.LearningPOJO;
 
 public class WebAutomation {
 

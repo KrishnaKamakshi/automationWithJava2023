@@ -1,4 +1,4 @@
-package LearningPOJO;
+package AllPOJODefinitions.LearningPOJO;
 
 public class GetCourses {
 

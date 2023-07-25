@@ -1,6 +1,6 @@
 package EcommerceAPIAutomation;
 
-import EcommerceAPIsPOJO.LoginResponse;
+import  AllPOJODefinitions.EcommerceAPIsPOJO.LoginResponse;
 import ResourceConstants.APIConstant;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
@@ -8,7 +8,6 @@ import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 

@@ -1,8 +1,8 @@
 package POJOLearnings;
 
 import ResourceConstants.APIConstant;
-import RestReqWebsiteAPIs.DataUsers;
-import RestReqWebsiteAPIs.ListUsers;
+import AllPOJODefinitions.RestReqWebsiteAPIs.DataUsers;
+import AllPOJODefinitions.RestReqWebsiteAPIs.ListUsers;
 import io.restassured.RestAssured;
 import org.testng.annotations.Test;
 

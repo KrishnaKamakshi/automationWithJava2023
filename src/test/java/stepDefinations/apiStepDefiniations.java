@@ -1,14 +1,11 @@
 package stepDefinations;
 
-import EcommerceAPIsPOJO.LoginResponse;
-import ResourceConstants.APIConstant;
-import RestReqWebsiteAPIs.LoginSuccessFul;
+import AllPOJODefinitions.RestReqWebsiteAPIs.LoginSuccessFul;
 import UtilsInformation.APIUtils;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import cucumber.api.junit.Cucumber;
-import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -16,7 +13,6 @@ import io.restassured.specification.ResponseSpecification;
 import org.junit.runner.RunWith;
 
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import static io.restassured.RestAssured.given;
@@ -33,7 +29,7 @@ public class apiStepDefiniations extends APIUtils {
         LoginSuccessFul loginSuccess = new LoginSuccessFul();
         loginSuccess.setEmail("eve.holt@reqres.in");
         loginSuccess.setPassword("cityslicka");
-        reqPOST = given().spec(requestBuilder()).header("Content-Type", "application/json").body(loginSuccess);
+        reqPOST = given().spec(requestBuilder("baseURl")).header("Content-Type", "application/json").body(loginSuccess);
         responsePOST = new ResponseSpecBuilder().expectStatusCode(200).build();
     }
     @When("user calls POST APIs with HTTPs request")
