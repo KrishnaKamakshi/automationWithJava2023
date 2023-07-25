@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="805c153b-d245-4460-a3b0-a7eaa83071f3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/POJOLearnings/testCreateUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POJOLearnings/testCreateUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,23 +42,48 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "azure-pipelines-07232023",
-    "last_opened_file_path": "D:/08072023/githubCode/automationWithJava",
+    "last_opened_file_path": "D:/08072023/githubCode/automationWithJava/src/main/java/AllPOJODefinations",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MavenSettings"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.testCreateUsers.testLogin">
-    <configuration name="CompareTwoLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaPrograms.CompareTwoLists" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\08072023\githubCode\automationWithJava\src\main\java\AllPOJODefinations" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\08072023\githubCode\automationWithJava\src\test\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.D:/08072023/githubCode/automationWithJava/src/ResourcesExecution/testng.xml">
+    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mavenProjectTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javaPrograms.*" />
+          <option name="PATTERN" value="cucumberRun.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="cucumberRun" />
+      <option name="MAIN_CLASS_NAME" value="cucumberRun.TestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="apiStepDefiniations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mavenProjectTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stepDefinations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="stepDefinations" />
+      <option name="MAIN_CLASS_NAME" value="stepDefinations.apiStepDefiniations" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -76,7 +101,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testCreateUsers.testLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="D:/08072023/githubCode/automationWithJava/src/ResourcesExecution/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mavenProjectTest" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/ResourcesExecution/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testCreateUsers" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mavenProjectTest" />
       <extension name="coverage">
         <pattern>
@@ -86,15 +121,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="POJOLearnings" />
       <option name="MAIN_CLASS_NAME" value="POJOLearnings.testCreateUsers" />
-      <option name="METHOD_NAME" value="testLogin" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testReqResListUsersExample.getTestListOfUsers" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testCreateUsers.testCreationOfUsers" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mavenProjectTest" />
       <extension name="coverage">
         <pattern>
@@ -103,8 +137,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="POJOLearnings" />
-      <option name="MAIN_CLASS_NAME" value="POJOLearnings.testReqResListUsersExample" />
-      <option name="METHOD_NAME" value="getTestListOfUsers" />
+      <option name="MAIN_CLASS_NAME" value="POJOLearnings.testCreateUsers" />
+      <option name="METHOD_NAME" value="testCreationOfUsers" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -114,9 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.testCreateUsers.testLogin" />
-        <item itemvalue="TestNG.testReqResListUsersExample.getTestListOfUsers" />
-        <item itemvalue="Application.CompareTwoLists" />
+        <item itemvalue="TestNG.D:/08072023/githubCode/automationWithJava/src/ResourcesExecution/testng.xml" />
+        <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="TestNG.testCreateUsers.testCreationOfUsers" />
+        <item itemvalue="TestNG.testCreateUsers" />
+        <item itemvalue="JUnit.apiStepDefiniations" />
       </list>
     </recent_temporary>
   </component>
