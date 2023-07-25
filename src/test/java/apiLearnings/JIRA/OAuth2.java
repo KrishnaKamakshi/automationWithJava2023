@@ -1,4 +1,4 @@
-package apiLearnings;
+package apiLearnings.JIRA;
 
 import io.restassured.parsing.Parser;
 import io.restassured.path.json.JsonPath;

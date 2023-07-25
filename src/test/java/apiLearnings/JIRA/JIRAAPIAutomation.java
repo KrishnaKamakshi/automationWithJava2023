@@ -1,4 +1,4 @@
-package apiLearnings;
+package apiLearnings.JIRA;
 
 import io.restassured.RestAssured;
 import io.restassured.filter.session.SessionFilter;

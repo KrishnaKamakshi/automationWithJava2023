@@ -1,4 +1,4 @@
-package EcommerceAPIAutomation;
+package apiLearnings.EcommerceAPIAutomation;
 
 import  AllPOJODefinitions.EcommerceAPIsPOJO.LoginResponse;
 import ResourceConstants.APIConstant;

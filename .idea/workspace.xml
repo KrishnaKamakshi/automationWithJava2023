@@ -6,6 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="805c153b-d245-4460-a3b0-a7eaa83071f3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EcommerceAPIAutomation/EcommerceAPIAutomation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/POJOLearnings/testCreateUsers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/POJOLearnings/testGetCourses.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/POJOLearnings/testReqResListUsersExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiLearnings/JIRAAPIAutomation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiLearnings/JiraTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiLearnings/LibraryAPIs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiLearnings/OAuth2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiLearnings/testAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiLearnings/testSumOfOrders.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +67,7 @@
       <recent name="D:\08072023\githubCode\automationWithJava\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.D:/08072023/githubCode/automationWithJava/src/ResourcesExecution/testng.xml">
+  <component name="RunManager" selected="TestNG.testReqResListUsersExample.getTestListOfUsers">
     <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mavenProjectTest" />
       <extension name="coverage">
@@ -68,21 +78,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="cucumberRun" />
       <option name="MAIN_CLASS_NAME" value="cucumberRun.TestRunner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="apiStepDefiniations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mavenProjectTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="stepDefinations.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="stepDefinations" />
-      <option name="MAIN_CLASS_NAME" value="stepDefinations.apiStepDefiniations" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,13 +141,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testReqResListUsersExample.getTestListOfUsers" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mavenProjectTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiLearnings.POJOLearnings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiLearnings.POJOLearnings" />
+      <option name="MAIN_CLASS_NAME" value="apiLearnings.POJOLearnings.testReqResListUsersExample" />
+      <option name="METHOD_NAME" value="getTestListOfUsers" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.testReqResListUsersExample.getTestListOfUsers" />
         <item itemvalue="TestNG.D:/08072023/githubCode/automationWithJava/src/ResourcesExecution/testng.xml" />
         <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="TestNG.testCreateUsers.testCreationOfUsers" />
         <item itemvalue="TestNG.testCreateUsers" />
-        <item itemvalue="JUnit.apiStepDefiniations" />
       </list>
     </recent_temporary>
   </component>

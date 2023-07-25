@@ -1,4 +1,4 @@
-package apiLearnings;
+package apiLearnings.JIRA;
 
 import static io.restassured.RestAssured.*;
 

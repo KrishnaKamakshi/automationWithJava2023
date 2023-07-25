@@ -1,4 +1,4 @@
-package apiLearnings;
+package apiLearnings.JIRA;
 
 import static org.testng.Assert.assertEquals;
 

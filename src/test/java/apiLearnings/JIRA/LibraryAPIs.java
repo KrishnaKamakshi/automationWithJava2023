@@ -1,4 +1,4 @@
-package apiLearnings;
+package apiLearnings.JIRA;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

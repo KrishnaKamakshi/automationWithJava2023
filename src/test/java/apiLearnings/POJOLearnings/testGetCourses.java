@@ -1,4 +1,4 @@
-package POJOLearnings;
+package apiLearnings.POJOLearnings;
 import AllPOJODefinitions.LearningPOJO.GetCourses;
 import ResourceConstants.APIConstant;
 import io.restassured.parsing.Parser;

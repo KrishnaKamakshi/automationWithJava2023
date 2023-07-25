@@ -1,4 +1,4 @@
-package POJOLearnings;
+package apiLearnings.POJOLearnings;
 
 import ResourceConstants.APIConstant;
 import AllPOJODefinitions.RestReqWebsiteAPIs.*;
