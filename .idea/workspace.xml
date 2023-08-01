@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="805c153b-d245-4460-a3b0-a7eaa83071f3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EcommerceAPIAutomation/EcommerceAPIAutomation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/POJOLearnings/testCreateUsers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/POJOLearnings/testGetCourses.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/POJOLearnings/testReqResListUsersExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/apiLearnings/JIRAAPIAutomation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/apiLearnings/JiraTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/apiLearnings/LibraryAPIs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/apiLearnings/OAuth2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/apiLearnings/testAPI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/apiLearnings/testSumOfOrders.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/global.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/global.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiLearnings/POJOLearnings/testCreateUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiLearnings/POJOLearnings/testCreateUsers.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +32,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
+        <option name="localRepository" value="D:\mavenRepo" />
         <option name="userSettingsFile" value="D:\mavenRepo\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -48,17 +42,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "azure-pipelines-07232023",
-    "last_opened_file_path": "D:/08072023/githubCode/automationWithJava/src/main/java/AllPOJODefinations",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;azure-pipelines-07232023&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/08072023/githubCode/automationWithJava/src/main/java/AllPOJODefinations&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\08072023\githubCode\automationWithJava\src\main\java\AllPOJODefinations" />
@@ -67,7 +61,7 @@
       <recent name="D:\08072023\githubCode\automationWithJava\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.testReqResListUsersExample.getTestListOfUsers">
+  <component name="RunManager" selected="JUnit.TestRunner">
     <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mavenProjectTest" />
       <extension name="coverage">
@@ -96,26 +90,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="D:/08072023/githubCode/automationWithJava/src/ResourcesExecution/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mavenProjectTest" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/ResourcesExecution/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="testCreateUsers" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mavenProjectTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="POJOLearnings.*" />
+          <option name="PATTERN" value="apiLearnings.POJOLearnings.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="POJOLearnings" />
-      <option name="MAIN_CLASS_NAME" value="POJOLearnings.testCreateUsers" />
+      <option name="PACKAGE_NAME" value="apiLearnings.POJOLearnings" />
+      <option name="MAIN_CLASS_NAME" value="apiLearnings.POJOLearnings.testCreateUsers" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -123,17 +107,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testCreateUsers.testCreationOfUsers" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testCreateUsers.testCreationOfUsers (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mavenProjectTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="POJOLearnings.*" />
+          <option name="PATTERN" value="apiLearnings.POJOLearnings.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="POJOLearnings" />
-      <option name="MAIN_CLASS_NAME" value="POJOLearnings.testCreateUsers" />
+      <option name="PACKAGE_NAME" value="apiLearnings.POJOLearnings" />
+      <option name="MAIN_CLASS_NAME" value="apiLearnings.POJOLearnings.testCreateUsers" />
       <option name="METHOD_NAME" value="testCreationOfUsers" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testCreateUsers.testPutMethodWithSpec" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mavenProjectTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiLearnings.POJOLearnings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiLearnings.POJOLearnings" />
+      <option name="MAIN_CLASS_NAME" value="apiLearnings.POJOLearnings.testCreateUsers" />
+      <option name="METHOD_NAME" value="testPutMethodWithSpec" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -161,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.testReqResListUsersExample.getTestListOfUsers" />
-        <item itemvalue="TestNG.D:/08072023/githubCode/automationWithJava/src/ResourcesExecution/testng.xml" />
         <item itemvalue="JUnit.TestRunner" />
-        <item itemvalue="TestNG.testCreateUsers.testCreationOfUsers" />
         <item itemvalue="TestNG.testCreateUsers" />
+        <item itemvalue="TestNG.testCreateUsers.testPutMethodWithSpec" />
+        <item itemvalue="TestNG.testCreateUsers.testCreationOfUsers (1)" />
+        <item itemvalue="TestNG.testReqResListUsersExample.getTestListOfUsers" />
       </list>
     </recent_temporary>
   </component>

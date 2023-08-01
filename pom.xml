@@ -128,5 +128,11 @@
             <version>4.2.3</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>user.java.io</groupId>
+            <artifactId>user.java.io</artifactId>
+            <version>2020.134.36653</version>
+            <scope>import</scope>
+        </dependency>
     </dependencies>
 </project>

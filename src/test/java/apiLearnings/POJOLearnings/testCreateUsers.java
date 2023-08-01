@@ -17,11 +17,15 @@ import static io.restassured.RestAssured.given;
 public class testCreateUsers {
     @Test
     public void testCreationOfUsers() {
-
+        /*
+        * URL - URL TAB
+        * Body
+        * Authentication - Request Header
+        * */
         CreateUsersTest usersDemo = new CreateUsersTest();
         ResponseOfCreateUsers getUserInfo = new ResponseOfCreateUsers();
         usersDemo.setName("Krishna Kamakshi Brahma");
-        usersDemo.setJob("Quality Analyst");
+        usersDemo.setJob("Quality Analyst QA");
         Response responseOfAddedUser = given().body(usersDemo).log().all()
                 .when().post(APIConstant.CREATE_USER_EMAIL)
                 .then().assertThat().statusCode(201).extract().response();
