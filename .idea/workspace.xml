@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="805c153b-d245-4460-a3b0-a7eaa83071f3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/global.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/global.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/apiLearnings/POJOLearnings/testCreateUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiLearnings/POJOLearnings/testCreateUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +59,12 @@
       <recent name="D:\08072023\githubCode\automationWithJava\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestRunner">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.D:/08072023/githubCode/automationWithJava/testng.xml">
     <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mavenProjectTest" />
       <extension name="coverage">
@@ -86,6 +89,16 @@
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="automationWithJava" />
       <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D:/08072023/githubCode/automationWithJava/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mavenProjectTest" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -143,31 +156,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testReqResListUsersExample.getTestListOfUsers" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mavenProjectTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="apiLearnings.POJOLearnings.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="apiLearnings.POJOLearnings" />
-      <option name="MAIN_CLASS_NAME" value="apiLearnings.POJOLearnings.testReqResListUsersExample" />
-      <option name="METHOD_NAME" value="getTestListOfUsers" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.D:/08072023/githubCode/automationWithJava/testng.xml" />
         <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="TestNG.testCreateUsers" />
         <item itemvalue="TestNG.testCreateUsers.testPutMethodWithSpec" />
         <item itemvalue="TestNG.testCreateUsers.testCreationOfUsers (1)" />
-        <item itemvalue="TestNG.testReqResListUsersExample.getTestListOfUsers" />
       </list>
     </recent_temporary>
   </component>
