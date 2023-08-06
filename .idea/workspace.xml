@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="805c153b-d245-4460-a3b0-a7eaa83071f3" name="Changes" comment="Excel Sheet IT">
+    <list default="true" id="805c153b-d245-4460-a3b0-a7eaa83071f3" name="Changes" comment="Logger added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ResourcesExecution/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResourcesExecution/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/apiLearnings/JIRA/JiraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiLearnings/JIRA/JiraTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/apiLearnings/POJOLearnings/testReqResListUsersExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiLearnings/POJOLearnings/testReqResListUsersExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiLearnings/JIRA/JIRAAPIAutomation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiLearnings/JIRA/JIRAAPIAutomation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinations/BookingClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinations/BookingClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/createBooking.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/createBooking.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +65,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.D:/08072023/githubCode/automationWithJava/src/ResourcesExecution/testng.xml">
+  <component name="RunManager" selected="JUnit.TestRunner">
     <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mavenProjectTest" />
       <extension name="coverage">
@@ -115,6 +114,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JIRAAPIAutomation.testAddAttachmentToABug" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mavenProjectTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiLearnings.JIRA.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiLearnings.JIRA" />
+      <option name="MAIN_CLASS_NAME" value="apiLearnings.JIRA.JIRAAPIAutomation" />
+      <option name="METHOD_NAME" value="testAddAttachmentToABug" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="testCreateUsers" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mavenProjectTest" />
       <extension name="coverage">
@@ -132,31 +149,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testCreateUsers.testPutMethodWithSpec" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mavenProjectTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="apiLearnings.POJOLearnings.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="apiLearnings.POJOLearnings" />
-      <option name="MAIN_CLASS_NAME" value="apiLearnings.POJOLearnings.testCreateUsers" />
-      <option name="METHOD_NAME" value="testPutMethodWithSpec" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="TestNG.JIRAAPIAutomation.testAddAttachmentToABug" />
         <item itemvalue="TestNG.D:/08072023/githubCode/automationWithJava/src/ResourcesExecution/testng.xml" />
         <item itemvalue="TestNG.D:/08072023/githubCode/automationWithJava/testng.xml" />
-        <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="TestNG.testCreateUsers" />
-        <item itemvalue="TestNG.testCreateUsers.testPutMethodWithSpec" />
       </list>
     </recent_temporary>
   </component>
@@ -177,11 +176,20 @@
       <option name="project" value="LOCAL" />
       <updated>1691208972274</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Logger added">
+      <option name="closed" value="true" />
+      <created>1691302281715</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691302281715</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Excel Sheet IT" />
-    <option name="LAST_COMMIT_MESSAGE" value="Excel Sheet IT" />
+    <MESSAGE value="Logger added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Logger added" />
   </component>
 </project>

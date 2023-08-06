@@ -7,12 +7,12 @@ Feature: Create a new Booking through Parameterization
     Examples:
       | firstname                    | lastname   | totalprice        |  depositpaid| checkin | checkout | additionalneeds |
       |Krishna                       |Brahma      |670            |true |2023-02-23       |2013-02-29|TestQA           |
-      |Krishna                       |Brahma      |670            |true |2023-02-23       |2013-02-29|TestQA           |
-      |Krishna                       |Brahma      |670            |true |2023-02-23       |2013-02-29|TestQA           |
-      |Krishna                       |Brahma      |670            |true |2023-02-23       |2013-02-29|TestQA           |
-      |Krishna                       |Brahma      |670            |true |2023-02-23       |2013-02-29|TestQA           |
-      |Krishna                       |Brahma      |670            |true |2023-02-23       |2013-02-29|TestQA           |
-      |Krishna                       |Brahma      |670            |true |2023-02-23       |2013-02-29|TestQA           |
-      |Krishna                       |Brahma      |670            |true |2023-02-23       |2013-02-29|TestQA           |
-      |Krishna                       |Brahma      |670            |true |2023-02-23       |2013-02-29|TestQA           |
 
+  Scenario Outline: Delete the booking which was made in the above scenarios
+    Given Bearer Token is generated with using auth API with "<Username>" and "<Password>" and it is passed as cookie value
+    When  There is a bookingid created pass the above token as Cookie with the booking id as 245
+    Then  Delete the BookingID and validate the status code
+
+    Examples:
+    |Username   |   Password|
+    |admin           | password123          |

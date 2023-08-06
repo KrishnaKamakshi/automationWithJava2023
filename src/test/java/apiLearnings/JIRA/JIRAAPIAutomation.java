@@ -91,10 +91,10 @@ public class JIRAAPIAutomation {
     }
 
     @Test
-    public void testGetPriotity()
+    public void testGetPriority()
     {
-        Response getAllpriority = given().log().all().cookie("JSESSIONID", sessionCookie).when().get("/rest/api/2/priority");
-        System.out.println(getAllpriority.getBody().jsonPath().prettify());
+        Response getAllPriority = given().log().all().cookie("JSESSIONID", sessionCookie).when().get("/rest/api/2/priority");
+        System.out.println(getAllPriority.getBody().jsonPath().prettify());
     }
 
 }
