@@ -4,7 +4,7 @@
     <test verbose="2" preserve-order="true"
           name="D:/08072023/mavenProjectTest/src/test/java/POJOLearnings/testReqResListUsersExample.java">
         <classes>
-            <class name="POJOLearnings.testReqResListUsersExample">
+            <class name="apiLearnings.POJOLearnings.testReqResListUsersExample">
                 <methods>
                     <include name="getTestListOfUsers"/>
                 </methods>

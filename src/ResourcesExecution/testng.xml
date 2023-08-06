@@ -4,8 +4,7 @@
     <test verbose="2" preserve-order="true"
           name="D:/08072023/testQAAutomation/src/test/java/apiLearnings/JIRAAPIAutomation.java">
         <classes>
-            <class name="apiLearnings.JIRAAPIAutomation"/>
-            <class name="POJOLearnings.testReqResListUsersExample"/>
+            <class name="apiLearnings.POJOLearnings.testReqResListUsersExample"/>
         </classes>
     </test>
 </suite>
