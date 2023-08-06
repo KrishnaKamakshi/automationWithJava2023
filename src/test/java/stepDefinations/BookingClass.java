@@ -6,13 +6,16 @@ import AllPOJODefinitions.RestFUL.BookingDates;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import UtilsInformation.APIUtils;
 
 
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.PrintStream;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
@@ -77,13 +80,14 @@ public class BookingClass extends APIUtils {
         String tokenCreation   = jsPath.getString("token");
         RequestSpecification requestPath = given().spec(requestBuilder("restfulURL")).header("Content-Type", "application/json")
                 .header("Cookie","token="+tokenCreation).log().all();
-        getStatusAfterDeletionofABookingID = requestPath.when().log().all().delete("/booking/"+bookingID2).then().extract().response();
+        PrintStream stream = new PrintStream(new FileOutputStream("src/test/resources/loggingFile/logRunTimeFileRestFul.log"));
+        getStatusAfterDeletionofABookingID = requestPath.filter(RequestLoggingFilter.logRequestTo(stream)).when().log().all().delete("/booking/"+bookingID2).then().extract().response();
     }
     @Then("Delete the BookingID and validate the status code")
     public void delete_the_BookingID_and_validate_the_status_code() {
         // Write code here that turns the phrase above into concrete actions
         int statusCodeDeleted = getStatusAfterDeletionofABookingID.getStatusCode();
-        assertEquals(405,statusCodeDeleted);
+        assertEquals(201,statusCodeDeleted);
     }
 
 }

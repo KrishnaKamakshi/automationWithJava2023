@@ -10,7 +10,7 @@ Feature: Create a new Booking through Parameterization
 
   Scenario Outline: Delete the booking which was made in the above scenarios
     Given Bearer Token is generated with using auth API with "<Username>" and "<Password>" and it is passed as cookie value
-    When  There is a bookingid created pass the above token as Cookie with the booking id as 245
+    When  There is a bookingid created pass the above token as Cookie with the booking id as 2050
     Then  Delete the BookingID and validate the status code
 
     Examples:
