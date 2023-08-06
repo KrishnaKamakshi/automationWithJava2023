@@ -4,6 +4,7 @@ import static io.restassured.RestAssured.*;
 
 import java.io.File;
 
+import lombok.extern.java.Log;
 import org.testng.Assert;
 
 import io.restassured.RestAssured;
@@ -11,7 +12,7 @@ import io.restassured.RestAssured;
 import io.restassured.filter.session.SessionFilter;
 
 import io.restassured.path.json.JsonPath;
-
+import lombok.extern.slf4j.Slf4j;
 public class JiraTest {
 
 	public static void main(String[] args) {
@@ -19,24 +20,15 @@ public class JiraTest {
 // TODO Auto-generated method stub
 
 		RestAssured.baseURI = "http://localhost:8083";
-
 //Login Scenario
-
 		SessionFilter session = new SessionFilter();
-
 		String response = given().relaxedHTTPSValidation().header("Content-Type", "application/json").body("{\r\n" +
-
 				"    \"username\": \"krishnaqajira\",\r\n" +
-
 				"    \"password\": \"Werkspot1234$\"\r\n" +
-
 				"}").log().all().filter(session).when().post("/rest/auth/1/session").then().log().all().extract()
 				.response().asString();
-
 		String expectedMessage = "Hi How are you?";
-
 //Add comment
-
 		String addCommentResponse = given().pathParam("key", "10101").log().all()
 				.header("Content-Type", "application/json").body("{\r\n" +
 
