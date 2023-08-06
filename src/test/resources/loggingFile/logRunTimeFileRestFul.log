@@ -1,0 +1,13 @@
+Request method:	DELETE
+Request URI:	https://restful-booker.herokuapp.com/booking/2050
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=73bb87bde882ce6
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
