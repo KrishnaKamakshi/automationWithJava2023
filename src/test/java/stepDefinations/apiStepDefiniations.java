@@ -31,6 +31,7 @@ public class apiStepDefiniations extends APIUtils {
         loginSuccess.setPassword("cityslicka");
         reqPOST = given().spec(requestBuilder("baseURl")).header("Content-Type", "application/json").body(loginSuccess);
         responsePOST = new ResponseSpecBuilder().expectStatusCode(200).build();
+        System.out.println("Test");
     }
     @When("user calls POST APIs with HTTPs request")
     public void user_calls_POST_APIs_with_HTTPs_request() {
