@@ -1,17 +1,26 @@
 trigger:
-- azure-pipelines-07232023
+  branches:
+    include:
+      - azure-pipelines-07232023  # Or your desired branch
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'ubuntu-latest'
 
 steps:
+  - task: UseJavaVersion@1
+    inputs:
+      versionSpec: '20'  # Update this to the correct version when Java 20 is available
+      addToPath: true
+
+  - script: |
+      java -version
+    displayName: 'Print Java Version'
+
   - task: Maven@3
     inputs:
-      mavenPomFile: 'pom.xml'
-      mavenOptions: '-Xmx3072m'
-      javaHomeOption: 'JDKVersion'
-      jdkVersionOption: '20'
-      jdkArchitectureOption: 'x64'
+      mavenPomFile: 'pom.xml'  # Update with the correct path
+      goals: 'clean install'  # Update with your desired Maven goals
       publishJUnitResults: false
       testResultsFiles: '**/surefire-reports/TEST-*.xml'
-      goals: 'clean install test'
+    displayName: 'Run Maven Goals'
+
