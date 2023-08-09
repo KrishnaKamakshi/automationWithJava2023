@@ -7,9 +7,16 @@ trigger:
 - azure-pipelines-07232023
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: windows-latest
 
 steps:
+  # Java tool installer v0
+  # Acquire a specific version of Java from a user-supplied Azure blob or the tool cache and sets JAVA_HOME.
+- task: JavaToolInstaller@0
+  inputs:
+    versionSpec: '20' # string. Required. JDK version. Default: 8.
+    jdkArchitectureOption: 'x64'
+    jdkSourceOption: 'AzureStorage'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
