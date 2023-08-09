@@ -1,32 +1,31 @@
-# Maven
-# Build your Java project and run tests with Apache Maven.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/java
-
 trigger:
-- azure-pipelines-07232023
+  - azure-pipelines-0909
 
 pool:
-  vmImage: windows-latest
+  vmImage: 'ubuntu-latest'
 
 steps:
-  # Java tool installer v0
-  # Acquire a specific version of Java from a user-supplied Azure blob or the tool cache and sets JAVA_HOME.
-- task: JavaToolInstaller@0
-  inputs:
-    azureSubscription: "?sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2023-08-18T18:42:52Z&st=2023-08-09T10:42:52Z&sip=110.225.183.148&spr=https&sig=3FjZAvPSDfdLkQn%2FEPtB5LVJNKF3%2FqGIkRiyR0GFfio%3D"
-    versionSpec: '20'
-    jdkArchitectureOption: 'x64'
-    jdkSourceOption: 'AzureStorage'
-    jdkAzureBlob: 'https://krishnaqa.blob.core.windows.net/testjava/jdk-20.0.2_windows-x64_bin.zip'
+  - task: UseJavaVersion@1
+    inputs:
+      versionSpec: '20'
 
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '20'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: false
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'clean install test'
+  - task: AzureCLI@2
+    displayName: 'Download JDK from Azure Blob Storage'
+    inputs:
+      azureSubscription: '<Name of your Azure service connection>'
+      scriptType: 'bash'
+      scriptLocation: 'inlineScript'
+      inlineScript: |
+        # Replace with your actual Azure Storage account and container information
+        STORAGE_ACCOUNT_NAME='krishnaqa
+        CONTAINER_NAME='testjava'
+        BLOB_NAME='jdk-20.0.2_windows-x64_bin.zip'
+        DESTINATION_FOLDER='$(Agent.BuildDirectory)/jdk'
+        
+        # Authenticate to Azure (assuming service connection handles this)
+        az login
+        
+        # Download the JDK blob to the destination folder
+        az storage blob download --account-name $STORAGE_ACCOUNT_NAME --container-name $CONTAINER_NAME --name $BLOB_NAME --type block --destination $DESTINATION_FOLDER
+        
+        echo "JDK downloaded to $DESTINATION_FOLDER"
