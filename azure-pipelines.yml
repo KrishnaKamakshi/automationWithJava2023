@@ -12,14 +12,14 @@ pool:
 steps:
 # Java tool installer v0
 # Acquire a specific version of Java from a user-supplied Azure blob or the tool cache and sets JAVA_HOME.
-- script:
-  which java
 - task: JavaToolInstaller@0
-  inputs:
-    versionSpec: '20'
-    jdkArchitectureOption: 'x64'
-    jdkSourceOption: 'PreInstalled'
-    JAVA_HOME_13_X64 : "/usr/lib/jvm/java-20-openjdk-amd64"
+    inputs:
+      versionSpec: "11"
+      jdkArchitectureOption: x64
+      jdkSourceOption: LocalDirectory
+      jdkFile: "/builds/openjdk-11.0.2_linux-x64_bin.tar.gz"
+      jdkDestinationDirectory: "/builds/binaries/externals"
+      cleanDestinationDirectory: true
 
 - script: 'java -version'
   displayName: 'Display Java Version'
