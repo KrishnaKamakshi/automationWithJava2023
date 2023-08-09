@@ -5,20 +5,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-  # Java tool installer v0
-  # Acquire a specific version of Java from a user-supplied Azure blob or the tool cache and sets JAVA_HOME.
-  - task: JavaToolInstaller@0
-    inputs:
-      versionSpec: "20"
-      jdkArchitectureOption: x64
-      jdkSourceOption: LocalDirectory
-      jdkFile: "/builds/openjdk-20.0.1_linux-x64_bin.tar.gz"
-      jdkDestinationDirectory: "/builds/binaries/externals"
-      cleanDestinationDirectory: true
-
-  - script: 'java -version'
-    displayName: 'Display Java Version'
-
   - task: Maven@3
     inputs:
       mavenPomFile: 'pom.xml'
