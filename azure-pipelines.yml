@@ -1,38 +1,31 @@
-# Maven
-# Build your Java project and run tests with Apache Maven.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/java
-
 trigger:
-- azure-pipelines-07232023 # or whichever branch you want to trigger the pipeline on
+- azure-pipelines-07232023
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: ubuntu-latest
 
 steps:
-# Java tool installer v0
-# Acquire a specific version of Java from a user-supplied Azure blob or the tool cache and sets JAVA_HOME.
-- task: JavaToolInstaller@0
+  # Java tool installer v0
+  # Acquire a specific version of Java from a user-supplied Azure blob or the tool cache and sets JAVA_HOME.
+  - task: JavaToolInstaller@0
     inputs:
-      versionSpec: "11"
+      versionSpec: "20"
       jdkArchitectureOption: x64
       jdkSourceOption: LocalDirectory
-      jdkFile: "/builds/openjdk-11.0.2_linux-x64_bin.tar.gz"
+      jdkFile: "/builds/openjdk-20.0.1_linux-x64_bin.tar.gz"
       jdkDestinationDirectory: "/builds/binaries/externals"
       cleanDestinationDirectory: true
 
-- script: 'java -version'
-  displayName: 'Display Java Version'
-  
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '20'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: false
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'clean install test'
+  - script: 'java -version'
+    displayName: 'Display Java Version'
 
-
+  - task: Maven@3
+    inputs:
+      mavenPomFile: 'pom.xml'
+      mavenOptions: '-Xmx3072m'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '20'
+      jdkArchitectureOption: 'x64'
+      publishJUnitResults: false
+      testResultsFiles: '**/surefire-reports/TEST-*.xml'
+      goals: 'clean install test'
