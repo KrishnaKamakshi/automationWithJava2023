@@ -5,9 +5,6 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-  - task: UseJavaVersion@1
-    inputs:
-      versionSpec: '20'
 
   - task: AzureCLI@2
     displayName: 'Download JDK from Azure Blob Storage'
