@@ -9,7 +9,7 @@ steps:
 - task: JavaToolInstaller@0
   displayName: 'Use Java 20'
   inputs:
-      versionSpec: '$(Parameters.versionSpec)'
+      versionSpec: '20'
       jdkArchitectureOption: x64
       jdkSourceOption: AzureStorage
       azureResourceManagerEndpoint: 'Free Trial (d6523d07-8ecf-4b92-a156-6389c1759469)'
@@ -22,10 +22,5 @@ steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '20.0.2'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: false
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean install test'
+    publishJUnitResults: false
