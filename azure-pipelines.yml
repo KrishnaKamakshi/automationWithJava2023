@@ -1,7 +1,5 @@
 trigger:
-  branches:
-    include:
-      - azure-pipelines-07232023  # Or your desired branch
+  - azure-pipelines-07232023  # Or your desired branch
 
 pool:
   vmImage: 'ubuntu-latest'
