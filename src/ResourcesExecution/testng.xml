@@ -5,7 +5,6 @@
           name="D:/08072023/testQAAutomation/src/test/java/apiLearnings/JIRAAPIAutomation.java">
         <classes>
             <class name="apiLearnings.POJOLearnings.testReqResListUsersExample"/>
-            <class name="apiLearnings.POJOLearnings.testGetCourses"/>
         </classes>
     </test>
 </suite>

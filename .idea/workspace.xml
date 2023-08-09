@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="805c153b-d245-4460-a3b0-a7eaa83071f3" name="Changes" comment="Updated POM XML">
+    <list default="true" id="805c153b-d245-4460-a3b0-a7eaa83071f3" name="Changes" comment="Updated Test Ng XML">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/apiLearnings/POJOLearnings/testCreateUsers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ResourcesExecution/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResourcesExecution/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +65,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.testCreateUsers.testCreationOfUsers">
+  <component name="RunManager" selected="TestNG.D:/08072023/githubCode/automationWithJava/src/ResourcesExecution/testng.xml">
     <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mavenProjectTest" />
       <extension name="coverage">
@@ -151,10 +152,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.D:/08072023/githubCode/automationWithJava/src/ResourcesExecution/testng.xml" />
         <item itemvalue="TestNG.testCreateUsers.testCreationOfUsers" />
         <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="TestNG.JIRAAPIAutomation.testAddAttachmentToABug" />
-        <item itemvalue="TestNG.D:/08072023/githubCode/automationWithJava/src/ResourcesExecution/testng.xml" />
         <item itemvalue="TestNG.D:/08072023/githubCode/automationWithJava/testng.xml" />
       </list>
     </recent_temporary>
@@ -224,7 +225,23 @@
       <option name="project" value="LOCAL" />
       <updated>1691556252876</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Updated POM XML">
+      <option name="closed" value="true" />
+      <created>1691556477734</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1691556477734</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Updated Test Ng XML">
+      <option name="closed" value="true" />
+      <created>1691556706653</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1691556706653</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,6 +260,7 @@
     <MESSAGE value="Logger added" />
     <MESSAGE value="Added Deleted Operation" />
     <MESSAGE value="Updated POM XML" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated POM XML" />
+    <MESSAGE value="Updated Test Ng XML" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Test Ng XML" />
   </component>
 </project>
