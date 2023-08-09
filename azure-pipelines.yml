@@ -16,7 +16,7 @@ steps:
   inputs:
     versionSpec: '20' # string. Required. JDK version. Default: 8.
     jdkArchitectureOption: 'x64'
-    jdkSourceOption: 'AzureStorage'
+    jdkSourceOption: 'HostedAgent'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
