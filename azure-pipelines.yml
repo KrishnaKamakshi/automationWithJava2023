@@ -13,11 +13,11 @@ steps:
       jdkArchitectureOption: x64
       jdkSourceOption: AzureStorage
       azureResourceManagerEndpoint: 'Free Trial (d6523d07-8ecf-4b92-a156-6389c1759469)'
-      azureStorageAccountName: '$(Parameters.azureStorageAccountName)'
-      azureContainerName: '$(Parameters.azureContainerName)'
+      azureStorageAccountName: 'krishnaqa'
+      azureContainerName: 'testjava'
       azureCommonVirtualFile: 'jdk-20.0.2_windows-x64_bin.zip'
       jdkDestinationDirectory: src/resources
-      azureResourceGroupName: '$(Parameters.azureResourceGroupName)'
+      azureResourceGroupName: 'krishnaqa'
 
 - task: Maven@3
   inputs:
