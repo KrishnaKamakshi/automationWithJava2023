@@ -1,23 +1,26 @@
-# Maven
-# Build your Java project and run tests with Apache Maven.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/java
-
 trigger:
-- azure-pipelines-07232023
+  - azure-pipelines-0909  # Or your desired branch
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'windows-latest'
+
 
 steps:
+- task: JavaToolInstaller@0
+  displayName: 'Use Java 20'
+  inputs:
+      versionSpec: '20'
+      jdkArchitectureOption: x64
+      jdkSourceOption: AzureStorage
+      azureResourceManagerEndpoint: 'Free Trial (d6523d07-8ecf-4b92-a156-6389c1759469)'
+      azureStorageAccountName: 'krishnaqa'
+      azureContainerName: 'testjava'
+      azureCommonVirtualFile: 'jdk-20.0.2_windows-x64_bin.zip'
+      jdkDestinationDirectory: src/resources
+      azureResourceGroupName: 'krishnaqa'
+
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean install test'
-
+    publishJUnitResults: false

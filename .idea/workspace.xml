@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="805c153b-d245-4460-a3b0-a7eaa83071f3" name="Changes" comment="Added Deleted Operation">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="805c153b-d245-4460-a3b0-a7eaa83071f3" name="Changes" comment="Testing Connection" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,17 +36,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;azure-pipelines-07232023&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/08072023/githubCode/automationWithJava/src/main/java/AllPOJODefinations&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "azure-pipelines-07232023",
+    "jdk.selected.JAVA_MODULE": "corretto-1.8",
+    "last_opened_file_path": "D:/08072023/githubCode/automationWithJava/src/main/java/AllPOJODefinations",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\08072023\githubCode\automationWithJava\src\main\java\AllPOJODefinations" />
@@ -62,7 +61,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestRunner">
+  <component name="RunManager" selected="TestNG.D:/08072023/githubCode/automationWithJava/src/ResourcesExecution/testng.xml">
     <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mavenProjectTest" />
       <extension name="coverage">
@@ -129,7 +128,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testCreateUsers" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testCreateUsers.testCreationOfUsers" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mavenProjectTest" />
       <extension name="coverage">
         <pattern>
@@ -139,7 +138,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="apiLearnings.POJOLearnings" />
       <option name="MAIN_CLASS_NAME" value="apiLearnings.POJOLearnings.testCreateUsers" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="testCreationOfUsers" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -148,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.D:/08072023/githubCode/automationWithJava/src/ResourcesExecution/testng.xml" />
+        <item itemvalue="TestNG.testCreateUsers.testCreationOfUsers" />
         <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="TestNG.JIRAAPIAutomation.testAddAttachmentToABug" />
-        <item itemvalue="TestNG.D:/08072023/githubCode/automationWithJava/src/ResourcesExecution/testng.xml" />
         <item itemvalue="TestNG.D:/08072023/githubCode/automationWithJava/testng.xml" />
-        <item itemvalue="TestNG.testCreateUsers" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +189,143 @@
       <option name="project" value="LOCAL" />
       <updated>1691310751981</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Deleted Operation">
+      <option name="closed" value="true" />
+      <created>1691552900047</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1691552900047</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Updated POM XML">
+      <option name="closed" value="true" />
+      <created>1691553301420</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1691553301420</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updated POM XML">
+      <option name="closed" value="true" />
+      <created>1691555884907</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1691555884907</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Updated POM XML">
+      <option name="closed" value="true" />
+      <created>1691556252876</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1691556252876</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Updated POM XML">
+      <option name="closed" value="true" />
+      <created>1691556477734</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1691556477734</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Updated Test Ng XML">
+      <option name="closed" value="true" />
+      <created>1691556706653</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1691556706653</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Updated Test Ng XML">
+      <option name="closed" value="true" />
+      <created>1691557273230</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1691557273230</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Updated Test Ng XML">
+      <option name="closed" value="true" />
+      <created>1691572833104</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1691572833104</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Updated Test Ng XML">
+      <option name="closed" value="true" />
+      <created>1691573663186</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1691573663186</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Updated Test Ng XML">
+      <option name="closed" value="true" />
+      <created>1691573819871</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1691573819871</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added BLOB URL">
+      <option name="closed" value="true" />
+      <created>1691575520202</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1691575520202</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added BLOB URL">
+      <option name="closed" value="true" />
+      <created>1691576257968</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1691576257968</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added BLOB URL">
+      <option name="closed" value="true" />
+      <created>1691576364927</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1691576364927</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added BLOB URL">
+      <option name="closed" value="true" />
+      <created>1691577972825</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1691577972825</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added BLOB URL">
+      <option name="closed" value="true" />
+      <created>1691578193396</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1691578193396</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Testing Connection">
+      <option name="closed" value="true" />
+      <created>1691578504006</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1691578504006</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Testing Connection">
+      <option name="closed" value="true" />
+      <created>1691578571774</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1691578571774</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,6 +343,10 @@
     <MESSAGE value="Excel Sheet IT" />
     <MESSAGE value="Logger added" />
     <MESSAGE value="Added Deleted Operation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Deleted Operation" />
+    <MESSAGE value="Updated POM XML" />
+    <MESSAGE value="Updated Test Ng XML" />
+    <MESSAGE value="Added BLOB URL" />
+    <MESSAGE value="Testing Connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing Connection" />
   </component>
 </project>
