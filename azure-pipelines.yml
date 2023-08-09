@@ -4,31 +4,21 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 trigger:
-- azure-pipelines-07232023
+- azure-pipelines-07232023 # or whichever branch you want to trigger the pipeline on
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'ubuntu-latest'
 
 steps:
-- task: JavaToolInstaller@0
+- task: UseJavaVersion@1
   inputs:
-    versionSpec: '20'
-    jdkArchitectureOption: 'x64'
-    jdkSourceOption: AzureStorage
-    azureResourceManagerEndpoint: myARMServiceConnection
-    azureStorageAccountName: myAzureStorageAccountName
-    azureContainerName: myAzureStorageContainerName
-    azureCommonVirtualFile: 'jdk1.6.0_45.zip'
-    jdkDestinationDirectory: '$(agent.toolsDirectory)/jdk6'
-    cleanDestinationDirectory: false
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '20'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: false
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'clean install test'
+    versionSpec: '20' # Change this to the desired JDK version
+    addToPath: true
+
+- script: 'java -version'
+  displayName: 'Display Java Version'
+
+- script: 'clean install test' # Replace with your Maven command
+  displayName: 'Run Maven Build'
+
 
