@@ -1,28 +1,20 @@
 trigger:
-  - azure-pipelines-0909
+  - azure-pipelines-0909  # Or your desired branch
 
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-
-  - task: AzureCLI@2
-    displayName: 'Download JDK from Azure Blob Storage'
+  - task: UseJavaVersion@1
     inputs:
-      azureSubscription: '<Name of your Azure service connection>'
-      scriptType: 'bash'
-      scriptLocation: 'inlineScript'
-      inlineScript: |
-        # Replace with your actual Azure Storage account and container information
-        STORAGE_ACCOUNT_NAME='krishnaqa
-        CONTAINER_NAME='testjava'
-        BLOB_NAME='jdk-20.0.2_windows-x64_bin.zip'
-        DESTINATION_FOLDER='$(Agent.BuildDirectory)/jdk'
-        
-        # Authenticate to Azure (assuming service connection handles this)
-        az login
-        
-        # Download the JDK blob to the destination folder
-        az storage blob download --account-name $STORAGE_ACCOUNT_NAME --container-name $CONTAINER_NAME --name $BLOB_NAME --type block --destination $DESTINATION_FOLDER
-        
-        echo "JDK downloaded to $DESTINATION_FOLDER"
+      versionSpec: '15'
+      addToPath: true
+      architecture: 'x64'
+
+  - script: |
+      java -version
+      mvn -version
+    displayName: 'Check Java and Maven versions'
+
+  - script: 'mvn clean install'
+    displayName: 'Run Maven build'
