@@ -16,7 +16,8 @@ steps:
   inputs:
     versionSpec: '20' # string. Required. JDK version. Default: 8.
     jdkArchitectureOption: 'x64'
-    jdkSourceOption: 'HostedAgent'
+    jdkSourceOption: 'LocalDirectory'
+
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
