@@ -17,6 +17,7 @@ steps:
     versionSpec: '20'
     jdkArchitectureOption: 'x64'
     jdkSourceOption: 'PreInstalled'
+    JAVA_HOME_13_X64 : "/usr/lib/jvm/java-20-openjdk-amd64"
 
 - script: 'java -version'
   displayName: 'Display Java Version'
