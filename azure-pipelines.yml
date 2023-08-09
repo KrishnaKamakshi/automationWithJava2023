@@ -5,16 +5,13 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-  - task: UseJavaVersion@1
-    inputs:
-      versionSpec: '15'
-      addToPath: true
-      architecture: 'x64'
-
-  - script: |
-      java -version
-      mvn -version
-    displayName: 'Check Java and Maven versions'
-
-  - script: 'mvn clean install'
-    displayName: 'Run Maven build'
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'pom.xml'
+    mavenOptions: '-Xmx3072m'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '15'
+    jdkArchitectureOption: 'x64'
+    publishJUnitResults: false
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    goals: 'clean install test'
