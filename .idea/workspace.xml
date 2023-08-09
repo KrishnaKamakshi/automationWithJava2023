@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="805c153b-d245-4460-a3b0-a7eaa83071f3" name="Changes" comment="Added Deleted Operation">
+    <list default="true" id="805c153b-d245-4460-a3b0-a7eaa83071f3" name="Changes" comment="Updated POM XML">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/loggingFile/logRunTimeFileRestFul.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/loggingFile/logRunTimeFileRestFul.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +44,9 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "azure-pipelines-07232023",
+    "jdk.selected.JAVA_MODULE": "corretto-1.8",
     "last_opened_file_path": "D:/08072023/githubCode/automationWithJava/src/main/java/AllPOJODefinations",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
@@ -198,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691552900047</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated POM XML">
+      <option name="closed" value="true" />
+      <created>1691553301420</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1691553301420</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,6 +226,7 @@
     <MESSAGE value="Excel Sheet IT" />
     <MESSAGE value="Logger added" />
     <MESSAGE value="Added Deleted Operation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Deleted Operation" />
+    <MESSAGE value="Updated POM XML" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated POM XML" />
   </component>
 </project>
