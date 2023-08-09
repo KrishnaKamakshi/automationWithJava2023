@@ -10,6 +10,13 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- script: |
+        which java
+        java -version
+        echo JAVA_HOME_8_x86=$JAVA_HOME_8_x86
+        echo JAVA_HOME=$JAVA_HOME
+        javac
+      displayName: 'Show Release Number'
 # Java tool installer v0
 # Acquire a specific version of Java from a user-supplied Azure blob or the tool cache and sets JAVA_HOME.
 - task: JavaToolInstaller@0
