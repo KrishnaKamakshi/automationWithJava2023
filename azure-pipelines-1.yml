@@ -1,5 +1,5 @@
 trigger:
-  - selenium-it-1008  # Or your desired branch
+  - selenium-it-1008-az  # Or your desired branch
 
 pool:
   vmImage: 'windows-latest'
