@@ -24,7 +24,11 @@ steps:
     mavenPomFile: 'pom.xml'
     goals: 'clean install test -DsuiteXmlFile=testng'
     publishJUnitResults: false
-
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)'
+    artifact: 'qakrishna'
+    publishLocation: 'pipeline'
 - task: CopyFiles@2
   displayName: 'Copy Files to: src/resources'
   inputs:
