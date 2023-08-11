@@ -23,7 +23,6 @@ public class BaseAPI {
         sessionCookie = jsPath.getString("session.value");
 
     }
-
     public String getSesstionCookieFromJIRA()
     {
         return sessionCookie;
