@@ -28,7 +28,7 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
   inputs:
-    PathtoPublish: '$(build.artifactstagingdirectory)/pathNew'
+    PathtoPublish: '$(build.artifactstagingdirectory)'
   condition: succeededOrFailed()
 
 - task: AmazonWebServices.aws-vsts-tools.S3Upload.S3Upload@1
