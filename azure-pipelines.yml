@@ -28,7 +28,7 @@ steps:
 - task: CopyFiles@2
   displayName: 'Copy Files to: src/resources'
   inputs:
-      SourceFolder: src/resources
+      SourceFolder: target/
       Contents: '**/*.jar'
       TargetFolder: src/resources
   condition: succeededOrFailed()
