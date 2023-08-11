@@ -4,21 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="805c153b-d245-4460-a3b0-a7eaa83071f3" name="Changes" comment="Testing Connection">
+    <list default="true" id="805c153b-d245-4460-a3b0-a7eaa83071f3" name="Changes" comment="S3 Bucket">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/azure-pipelines-1.yml" beforeDir="false" afterPath="$PROJECT_DIR$/azure-pipelines-1.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/azure-pipelines.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AllPOJODefinitions/RestReqWebsiteAPIs/CreateUsersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AllPOJODefinitions/RestReqWebsiteAPIs/CreateUsersTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AllPOJODefinitions/RestReqWebsiteAPIs/DataUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AllPOJODefinitions/RestReqWebsiteAPIs/DataUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AllPOJODefinitions/RestReqWebsiteAPIs/ListUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AllPOJODefinitions/RestReqWebsiteAPIs/ListUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AllPOJODefinitions/RestReqWebsiteAPIs/LoginSuccessFul.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AllPOJODefinitions/RestReqWebsiteAPIs/LoginSuccessFul.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LearningPOJO/APIPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LearningPOJO/APIPojo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MavenTesting/testQAAutomation/BaseAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MavenTesting/testQAAutomation/BaseAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestReqWebsiteAPIs/DataUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestReqWebsiteAPIs/DataUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestReqWebsiteAPIs/ListUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestReqWebsiteAPIs/ListUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestReqWebsiteAPIs/SupportClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestReqWebsiteAPIs/SupportClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UtilsInformation/APIUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilsInformation/APIUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -344,7 +332,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691578571774</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="S3 Bucket">
+      <option name="closed" value="true" />
+      <created>1691755390498</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1691755390498</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -366,6 +362,7 @@
     <MESSAGE value="Updated Test Ng XML" />
     <MESSAGE value="Added BLOB URL" />
     <MESSAGE value="Testing Connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing Connection" />
+    <MESSAGE value="S3 Bucket" />
+    <option name="LAST_COMMIT_MESSAGE" value="S3 Bucket" />
   </component>
 </project>
