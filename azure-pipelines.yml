@@ -22,7 +22,7 @@ steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
-    goals: 'clean install test'
+    goals: 'clean install test -DsuiteXmlFile=testng'
     publishJUnitResults: false
 
 - task: CopyFiles@2
@@ -36,7 +36,7 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
   inputs:
-    PathtoPublish: 'src/resources'
+    PathtoPublish: 'target/'
   condition: succeededOrFailed()
 
 - task: AmazonWebServices.aws-vsts-tools.S3Upload.S3Upload@1
