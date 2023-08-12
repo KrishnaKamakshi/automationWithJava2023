@@ -49,7 +49,7 @@ steps:
     awsCredentials: krishnaawsaccess
     regionName: 'us-west-1'
     bucketName: qakrishnas3
-    sourceFolder: src/resources
+    sourceFolder: target/
     createBucket: true
     keyManagement: awsManaged
     encryptionAlgorithm: AES256
