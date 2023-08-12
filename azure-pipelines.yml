@@ -52,12 +52,7 @@ steps:
     createBucket: true
     keyManagement: awsManaged
     encryptionAlgorithm: AES256
-- task: PublishTestResults@2
-  displayName: publish unit test results
+- task: AllureGenerate@1
   inputs:
-    testResultsFormat: 'VSTest'
-    testResultsFiles: 'file*.extension'
-    searchFolder: 'allure-report/'
-    testRunTitle: Unit test results for $(Build.BuildNumber)
-    buildConfiguration: debug
-    mergeTestResults: true
+    resultsDir: 'allure-results'
+    targetDir: 'allure-report/'
