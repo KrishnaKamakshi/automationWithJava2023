@@ -28,19 +28,15 @@ public class DataUsers {
     public String getLast_name() {
         return last_name;
     }
-
     public void setLast_name(String last_name) {
         this.last_name = last_name;
     }
-
     public String getAvatar() {
         return avatar;
     }
-
     public void setAvatar(String avatar) {
         this.avatar = avatar;
     }
-
     private int id;
     private String email;
     private String first_name;
