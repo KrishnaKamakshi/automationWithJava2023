@@ -52,7 +52,3 @@ steps:
     createBucket: true
     keyManagement: awsManaged
     encryptionAlgorithm: AES256
-- task: AllureGenerate@1
-  inputs:
-    resultsDir: 'allure-results'
-    targetDir: 'allure-report/'
