@@ -4,7 +4,10 @@ import Config.DriverConfig;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 
 public class WebUtils extends DriverConfig {
@@ -89,6 +92,14 @@ public class WebUtils extends DriverConfig {
     public static void sleep() throws InterruptedException
     {
         Thread.sleep(3000);
+    }
+    public static void keyToEnterWithXpath(String Xpath, String enterTheValue)
+    {
+        driver.findElement(By.xpath(Xpath)).sendKeys(enterTheValue);
+    }
+    public static void waitForElementVisible(By locator, int timeOut, int pollingTime) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut), Duration.ofSeconds(pollingTime));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
 }

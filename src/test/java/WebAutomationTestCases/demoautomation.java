@@ -1,16 +1,22 @@
 package WebAutomationTestCases;
 
-import io.qameta.allure.Epic;
-import io.qameta.allure.Story;
+import io.qameta.allure.*;
 import org.testng.annotations.Test;
 import web.Steps.AgileTestingAllianceSteps;
 
 
 
 public class demoautomation extends AgileTestingAllianceSteps {
-    @Test
+    @Description("Navigation to Flipkart Page")
+    @Severity(SeverityLevel.NORMAL)
+    @Test(priority = 1)
     public void testUrlNavigation() throws InterruptedException {
         getURL();
+        navigateToFlipkartSite();
+        clickOnSearchIcon();
+        clickOnWebSite();
+        waitUntilElementIsVisible();
     }
+
 
 }
