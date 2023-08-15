@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import web.Steps.AgileTestingAllianceSteps;
 
 
-public class demoautomation extends AgileTestingAllianceSteps {
+public class DemoAutomation extends AgileTestingAllianceSteps {
     @Description("Navigation to Flipkart Page")
     @Severity(SeverityLevel.NORMAL)
     @Test(priority = 1)
@@ -16,6 +16,4 @@ public class demoautomation extends AgileTestingAllianceSteps {
         clickOnWebSite();
         waitUntilElementIsVisible();
     }
-
-
 }

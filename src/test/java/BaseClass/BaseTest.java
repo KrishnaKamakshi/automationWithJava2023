@@ -1,7 +1,7 @@
 package BaseClass;
 
 import UtilsInformation.DriverClass;
-import WebAutomationTestCases.demoautomation;
+import WebAutomationTestCases.DemoAutomation;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,7 +13,7 @@ public class BaseTest {
     static WebDriver driver;
     DriverClass driverClassDemo;
     protected SoftAssert softAssert;
-    protected demoautomation loginPage;
+    protected DemoAutomation loginPage;
 
     @BeforeTest
     public void setupChrome() {
