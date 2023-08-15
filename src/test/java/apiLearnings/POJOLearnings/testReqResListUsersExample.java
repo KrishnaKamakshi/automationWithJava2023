@@ -3,7 +3,10 @@ package apiLearnings.POJOLearnings;
 import ResourceConstants.APIConstant;
 import AllPOJODefinitions.RestReqWebsiteAPIs.DataUsers;
 import AllPOJODefinitions.RestReqWebsiteAPIs.ListUsers;
+import io.qameta.allure.Step;
 import io.restassured.RestAssured;
+import listeners.CustomListeners;
+import lombok.extern.slf4j.Slf4j;
 import org.testng.annotations.Test;
 import org.testng.log4testng.Logger;
 
@@ -11,9 +14,9 @@ import java.util.List;
 import java.util.Objects;
 
 import static io.restassured.RestAssured.given;
-
-public class testReqResListUsersExample {
-    Logger log = Logger.getLogger(testReqResListUsersExample.class);
+@Slf4j
+public class testReqResListUsersExample extends CustomListeners {
+    @Step("This test case is used for getting the list of user from the APIs")
     @Test
     public void getTestListOfUsers(){
         RestAssured.baseURI= APIConstant.BASE_URI_REQRES;
