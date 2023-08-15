@@ -13,10 +13,10 @@ import static io.restassured.RestAssured.given;
 
 public class testReqResListUsersExample {
     @Test
-    public void getTestListOfUsers(){
-        RestAssured.baseURI= APIConstant.BASE_URI_REQRES;
+    public void getTestListOfUsers() {
+        RestAssured.baseURI = APIConstant.BASE_URI_REQRES;
         ListUsers responseOfGetUsers = given().log().all()
-                .queryParams("page","2")
+                .queryParams("page", "2")
                 .when().get(APIConstant.URL_GET_USER_LIST).as(ListUsers.class);
 
         int value = responseOfGetUsers.getTotal();
@@ -25,10 +25,8 @@ public class testReqResListUsersExample {
 
         //Scan of the Data
         List<DataUsers> getNames = responseOfGetUsers.getData();
-        for (int i=0; i<getNames.size(); i++)
-        {
-            if(Objects.equals(responseOfGetUsers.getData().get(i).getFirst_name(), "Lindsay"))
-            {
+        for (int i = 0; i < getNames.size(); i++) {
+            if (Objects.equals(responseOfGetUsers.getData().get(i).getFirst_name(), "Lindsay")) {
                 System.out.println(responseOfGetUsers.getData().get(i).getAvatar());
             }
         }

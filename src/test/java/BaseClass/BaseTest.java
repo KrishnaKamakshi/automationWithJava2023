@@ -1,4 +1,5 @@
 package BaseClass;
+
 import UtilsInformation.DriverClass;
 import WebAutomationTestCases.demoautomation;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -15,12 +16,12 @@ public class BaseTest {
     protected demoautomation loginPage;
 
     @BeforeTest
-    public void setupChrome()
-    {
+    public void setupChrome() {
         WebDriverManager.chromedriver().create();
         driver = new ChromeDriver();
 
     }
+
     @AfterTest
     public void tearDown() {
         driver.quit();

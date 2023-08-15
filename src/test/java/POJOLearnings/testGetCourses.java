@@ -1,9 +1,11 @@
 package POJOLearnings;
+
 import LearningPOJO.GetCourses;
 import ResourceConstants.APIConstant;
 import io.restassured.parsing.Parser;
 
 import static io.restassured.RestAssured.given;
+
 public class testGetCourses {
 
     public static void main(String[] args) {

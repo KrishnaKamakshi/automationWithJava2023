@@ -16,7 +16,6 @@ public class CustomListeners implements ITestListener {
     public void onStart(ITestContext Result) {
         // TODO Auto-generated method stub
         log.info("On Start Message is shown as " + Result.getName());
-
     }
     @Override
     public void onTestFailedButWithinSuccessPercentage(ITestResult arg0) {

@@ -11,92 +11,86 @@ import java.time.Duration;
 import java.util.List;
 
 public class WebUtils extends DriverConfig {
-    public static void getURLWebsite(String url)
-    {
+    public static void getURLWebsite(String url) {
         driver.get(url);
     }
-    public static WebElement getElementByID(String value)
-    {
+
+    public static WebElement getElementByID(String value) {
         return driver.findElement(By.id(value));
     }
 
-    public static WebElement getElementByXpath(String valueOf)
-    {
+    public static WebElement getElementByXpath(String valueOf) {
         return driver.findElement(By.xpath(valueOf));
     }
 
-    public static String getTextFromAttributeValue(String valueText)
-    {
+    public static String getTextFromAttributeValue(String valueText) {
         return driver.findElement(By.id(valueText)).getText();
     }
-    public static String getTextFromAttributeValueXpath(String valueText)
-    {
+
+    public static String getTextFromAttributeValueXpath(String valueText) {
         return driver.findElement(By.xpath(valueText)).getText();
     }
 
-    public static String getTextFromAttributeValueText(String valueText)
-    {
+    public static String getTextFromAttributeValueText(String valueText) {
         return driver.findElement(By.xpath(valueText)).getText();
     }
-    public static int gettingTheSize(String valueOfSize)
-    {
+
+    public static int gettingTheSize(String valueOfSize) {
         return driver.findElements(By.xpath(valueOfSize)).size();
     }
 
-    public static String getTheTitle()
-    {
+    public static String getTheTitle() {
         return driver.getTitle();
     }
-    public static List<WebElement> getElementsByXpathWood(String valueOf)
-    {
+
+    public static List<WebElement> getElementsByXpathWood(String valueOf) {
         return driver.findElements(By.xpath(valueOf));
     }
-    public static List<WebElement> getElementsByXpathElements(String valueOf)
-    {
+
+    public static List<WebElement> getElementsByXpathElements(String valueOf) {
         return driver.findElements(By.xpath(valueOf));
     }
-    public static void getElemenetByIDSendValues(String valueOfLocator)
-    {
+
+    public static void getElemenetByIDSendValues(String valueOfLocator) {
         driver.findElement(By.id(valueOfLocator));
     }
-    public static void clickOnElementByXpath(String xpath)
-    {
+
+    public static void clickOnElementByXpath(String xpath) {
         driver.findElement(By.xpath(xpath)).click();
     }
-    public static String getByElements(String xpath, int index, String href)
-    {
+
+    public static String getByElements(String xpath, int index, String href) {
         return driver.findElements(By.xpath(xpath)).get(index).getAttribute(href);
     }
-    public static WebElement getByElementsIndex(String xpath, int index)
-    {
+
+    public static WebElement getByElementsIndex(String xpath, int index) {
         return driver.findElements(By.xpath(xpath)).get(index);
     }
 
-    public static String getByElementsText(String xpath, int index)
-    {
-        return driver.findElements(By.xpath(xpath)).get(index).getText();
-    }
-    public static void sendTheValueByID(String ID, String enterTheValue)
-    {
-        driver.findElement(By.id(ID)).sendKeys(enterTheValue);
-    }
-    public static void keyToEnter(String ID)
-    {
-        driver.findElement(By.id(ID)).sendKeys(Keys.ENTER);
-    }
-    public static String getTheValueByXpath(String xpath, int index)
-    {
+    public static String getByElementsText(String xpath, int index) {
         return driver.findElements(By.xpath(xpath)).get(index).getText();
     }
 
-    public static void sleep() throws InterruptedException
-    {
+    public static void sendTheValueByID(String ID, String enterTheValue) {
+        driver.findElement(By.id(ID)).sendKeys(enterTheValue);
+    }
+
+    public static void keyToEnter(String ID) {
+        driver.findElement(By.id(ID)).sendKeys(Keys.ENTER);
+    }
+
+    public static String getTheValueByXpath(String xpath, int index) {
+        return driver.findElements(By.xpath(xpath)).get(index).getText();
+    }
+
+    public static void sleep() throws InterruptedException {
         Thread.sleep(3000);
     }
-    public static void keyToEnterWithXpath(String Xpath, String enterTheValue)
-    {
+
+    public static void keyToEnterWithXpath(String Xpath, String enterTheValue) {
         driver.findElement(By.xpath(Xpath)).sendKeys(enterTheValue);
     }
+
     public static void waitForElementVisible(By locator, int timeOut, int pollingTime) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut), Duration.ofSeconds(pollingTime));
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));

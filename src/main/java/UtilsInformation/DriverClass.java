@@ -9,13 +9,13 @@ import org.testng.annotations.BeforeSuite;
 
 public class DriverClass extends DriverConfig {
     @BeforeSuite
-    public void setupChrome()
-    {
+    public void setupChrome() {
         WebDriverManager.chromedriver().create();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
 
     }
+
     @AfterSuite
     public void tearDown() {
         driver.quit();

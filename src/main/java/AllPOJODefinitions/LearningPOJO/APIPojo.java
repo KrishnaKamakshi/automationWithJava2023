@@ -23,5 +23,4 @@ public class APIPojo {
     private String price;
 
 
-
 }

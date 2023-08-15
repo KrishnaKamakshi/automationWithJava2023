@@ -50,12 +50,9 @@ public class EcommerceAPIAutomation {
         produtDetails.put("productDescription", "Kamakshi@2025");
         produtDetails.put("productFor", "automationqa@java.com");
         produtDetails.put("productImage", "https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649434146.jpeg");
-
         RequestSpecification reqProduct = given().log().all().spec(specRequestHeaders).body(produtDetails);
-
         String responseForAProudct = reqProduct.when().log().all().
                 post("/api/ecom/user/add-to-cart").then().log().all().extract().response().asString();
-
         System.out.println(responseForAProudct);
     }
 

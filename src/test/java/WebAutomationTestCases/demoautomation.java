@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 import web.Steps.AgileTestingAllianceSteps;
 
 
-
 public class demoautomation extends AgileTestingAllianceSteps {
     @Description("Navigation to Flipkart Page")
     @Severity(SeverityLevel.NORMAL)
