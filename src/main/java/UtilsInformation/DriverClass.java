@@ -15,9 +15,8 @@ public class DriverClass extends DriverConfig {
         driver.manage().window().maximize();
 
     }
-
     @AfterSuite
     public void tearDown() {
-        driver.quit();
+        driver.close();
     }
 }

@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="805c153b-d245-4460-a3b0-a7eaa83071f3" name="Changes" comment="S3 Bucket">
+    <list default="true" id="805c153b-d245-4460-a3b0-a7eaa83071f3" name="Changes" comment="Added Web Application method in the XML file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/011d1e20-65e8-49ed-a135-09ce658e5dc3-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/01ad27a5-f6b5-40c6-adce-43227f593328-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/01e45178-5234-4888-8452-d3b74c7b70fe-container.json" beforeDir="false" />
@@ -28,6 +27,7 @@
       <change beforePath="$PROJECT_DIR$/allure-results/12ea6bbe-4e38-4a69-98bf-7c1dd5930f42-result.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/14b4ef1a-c852-4a9d-aaeb-f20959b6bc6e-result.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/14c4e627-114e-41f3-9e24-5516294dacc8-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/16c06a3e-e085-40d4-9ce9-a23ccaa8a984-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/1704a58f-e8e2-442e-ad04-380b830a78f0-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/17771b59-cac2-4ebf-bd5d-e8ef09603dda-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/1794937a-40ef-4e44-a093-d179c46bbc9a-container.json" beforeDir="false" />
@@ -128,6 +128,7 @@
       <change beforePath="$PROJECT_DIR$/allure-results/6878045c-3aa6-4058-9eac-1c51cc9977b7-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/6915b025-4d0d-446b-a4e8-1d4ba91caa12-result.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/6b6603a6-a323-4d0a-8e05-7776c8345ad4-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/6bfbce1f-c08b-4af5-ac47-25deefdcf74a-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/6c1fd8ad-86c9-4940-b84e-23c028bd2c84-result.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/6cc89f46-e799-4c2e-8b5a-d65047c9cba7-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/6df5dca0-58c6-4e9b-8227-4038ac68025d-container.json" beforeDir="false" />
@@ -148,6 +149,7 @@
       <change beforePath="$PROJECT_DIR$/allure-results/80456c59-5c69-4ab3-be6e-9378fe5295be-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/80a598f4-11df-4338-befd-46651089c677-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/8248437a-6040-4f69-a289-a5c774c6cc51-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/83a68d4c-fd7e-4e7b-8da2-fc1a36fc53fc-result.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/83c10a85-403e-4a9e-bdd3-b36d2bdd7fd6-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/83f9fd20-34f0-477b-a246-42da13c5542e-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/84d60858-cba2-48f2-a314-01e2941bdbde-result.json" beforeDir="false" />
@@ -178,6 +180,7 @@
       <change beforePath="$PROJECT_DIR$/allure-results/9ad15d7a-2aa0-4d7f-ace2-7d7a0f46f073-result.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/9ba56eb1-a1ba-43f9-ba7e-801b6c26e8f2-result.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/9beb9d34-8f6d-479b-9502-6a0b3f845156-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/9c8e2159-77aa-4fc4-b1f3-971e875e9e29-result.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/9de46302-9000-4de6-bf0a-a21a275ce070-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/9fd3e06f-2b4b-400d-aa23-e5f2bed2ddc0-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/a2046d6e-6b92-4843-b42d-6e946f1375c5-container.json" beforeDir="false" />
@@ -248,6 +251,7 @@
       <change beforePath="$PROJECT_DIR$/allure-results/dba8b0fe-acbc-4602-aeb7-dcffedf47f18-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/dc60faee-3cac-4d3c-8a55-c25a9c591437-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/dcb9ee3f-1584-44d3-a42f-0c7f97c4b173-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/def6fc87-c50e-4538-84b4-ff4a78aeda2e-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/e05d6158-4422-4d51-8fbf-7c398e3f1b33-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/e2080a7b-c4c5-459b-bb70-1a16dd045c09-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/e297e22e-826a-4072-990b-4f864a45bcf0-container.json" beforeDir="false" />
@@ -279,12 +283,13 @@
       <change beforePath="$PROJECT_DIR$/allure-results/fca1255a-ab55-4ac4-981d-c498385e33fe-result.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/fd0df4fc-9b12-4a20-9bc9-f085cdf0659a-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/fe2b6a08-fffc-4f2c-948f-e5715ced3faf-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/azure-pipelines.yml" beforeDir="false" afterPath="$PROJECT_DIR$/azure-pipelines.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/apiLearnings/POJOLearnings/testReqResListUsersExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiLearnings/POJOLearnings/testReqResListUsersExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/loggingFile/logRunTimeFileRestFul.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/loggingFile/logRunTimeFileRestFul.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ResourcesExecution/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResourcesExecution/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UtilsInformation/DriverClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilsInformation/DriverClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UtilsInformation/WebUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilsInformation/WebUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/Steps/AgileTestingAllianceSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/Steps/AgileTestingAllianceSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseClass/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseClass/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebAutomationTestCases/DemoAutomation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebAutomationTestCases/DemoAutomation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -321,20 +326,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "ui__automation__1208",
-    "jdk.selected.JAVA_MODULE": "corretto-1.8",
-    "last_opened_file_path": "D:/08072023/githubCode/automationWithJava/src/main/java/web",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ui__automation__1208&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/08072023/githubCode/automationWithJava/src/ResourcesExecution&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\08072023\githubCode\automationWithJava\src\ResourcesExecution" />
       <recent name="D:\08072023\githubCode\automationWithJava\src\main\java\web" />
       <recent name="D:\08072023\githubCode\automationWithJava\src\main\java\AllPOJODefinations" />
     </key>
@@ -348,24 +356,10 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean" />
+      <command value="mvn clean install test" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.D:/08072023/githubCode/automationWithJava/testng.xml">
-    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mavenProjectTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumberRun.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cucumberRun" />
-      <option name="MAIN_CLASS_NAME" value="cucumberRun.TestRunner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.D:/08072023/githubCode/automationWithJava/src/ResourcesExecution/testng.xml">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="automationWithJava" />
       <method v="2">
@@ -379,9 +373,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="D:/08072023/githubCode/automationWithJava/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="D:/08072023/githubCode/automationWithJava/src/ResourcesExecution/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mavenProjectTest" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/ResourcesExecution/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -389,7 +383,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="demoautomation" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DemoAutomation2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mavenProjectTest" />
       <extension name="coverage">
         <pattern>
@@ -398,7 +392,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="WebAutomationTestCases" />
-      <option name="MAIN_CLASS_NAME" value="WebAutomationTestCases.demoautomation" />
+      <option name="MAIN_CLASS_NAME" value="WebAutomationTestCases.DemoAutomation2" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -406,7 +400,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="demoautomation.testUrlNavigation" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DemoAutomation2.testUrlNavigation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mavenProjectTest" />
       <extension name="coverage">
         <pattern>
@@ -415,7 +409,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="WebAutomationTestCases" />
-      <option name="MAIN_CLASS_NAME" value="WebAutomationTestCases.demoautomation" />
+      <option name="MAIN_CLASS_NAME" value="WebAutomationTestCases.DemoAutomation2" />
       <option name="METHOD_NAME" value="testUrlNavigation" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -424,7 +418,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="demoautomation.urlNavigation" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DemoAutomation2.testUrlNavigationRahulShetty" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mavenProjectTest" />
       <extension name="coverage">
         <pattern>
@@ -433,8 +427,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="WebAutomationTestCases" />
-      <option name="MAIN_CLASS_NAME" value="WebAutomationTestCases.demoautomation" />
-      <option name="METHOD_NAME" value="urlNavigation" />
+      <option name="MAIN_CLASS_NAME" value="WebAutomationTestCases.DemoAutomation2" />
+      <option name="METHOD_NAME" value="testUrlNavigationRahulShetty" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoAutomation.testUrlNavigation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mavenProjectTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="WebAutomationTestCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="WebAutomationTestCases" />
+      <option name="MAIN_CLASS_NAME" value="WebAutomationTestCases.DemoAutomation" />
+      <option name="METHOD_NAME" value="testUrlNavigation" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -444,11 +456,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.D:/08072023/githubCode/automationWithJava/testng.xml" />
-        <item itemvalue="TestNG.demoautomation.testUrlNavigation" />
-        <item itemvalue="TestNG.demoautomation" />
-        <item itemvalue="TestNG.demoautomation.urlNavigation" />
-        <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="TestNG.D:/08072023/githubCode/automationWithJava/src/ResourcesExecution/testng.xml" />
+        <item itemvalue="TestNG.DemoAutomation2.testUrlNavigationRahulShetty" />
+        <item itemvalue="TestNG.DemoAutomation2" />
+        <item itemvalue="TestNG.DemoAutomation2.testUrlNavigation" />
+        <item itemvalue="TestNG.DemoAutomation.testUrlNavigation" />
       </list>
     </recent_temporary>
   </component>
@@ -661,7 +673,23 @@
       <option name="project" value="LOCAL" />
       <updated>1691797720942</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="initial commit for Web Application Framework - Testing 1 - EPIC 4">
+      <option name="closed" value="true" />
+      <created>1692079977643</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1692079977643</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Added Web Application method in the XML file">
+      <option name="closed" value="true" />
+      <created>1692080746937</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1692080746937</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -684,6 +712,8 @@
     <MESSAGE value="Added BLOB URL" />
     <MESSAGE value="Testing Connection" />
     <MESSAGE value="S3 Bucket" />
-    <option name="LAST_COMMIT_MESSAGE" value="S3 Bucket" />
+    <MESSAGE value="initial commit for Web Application Framework - Testing 1 - EPIC 4" />
+    <MESSAGE value="Added Web Application method in the XML file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Web Application method in the XML file" />
   </component>
 </project>

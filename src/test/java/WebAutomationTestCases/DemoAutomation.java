@@ -10,7 +10,7 @@ public class DemoAutomation extends AgileTestingAllianceSteps {
     @Severity(SeverityLevel.NORMAL)
     @Test(priority = 1)
     public void testUrlNavigation() throws InterruptedException {
-        getURL();
+        getURL("https://www.google.com");
         navigateToFlipkartSite();
         clickOnSearchIcon();
         clickOnWebSite();

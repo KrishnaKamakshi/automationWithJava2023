@@ -9,8 +9,8 @@ import static UtilsInformation.WebUtils.*;
 
 public class AgileTestingAllianceSteps extends DriverClass {
     @Step("Getting the URL")
-    public void getURL() throws InterruptedException {
-        WebUtils.getURLWebsite("https://www.google.com");
+    public void getURL(String URL) throws InterruptedException {
+        WebUtils.getURLWebsite(URL);
     }
     @Step("Enter Flipkart in the search bar")
     public void navigateToFlipkartSite() throws InterruptedException {
