@@ -9,9 +9,10 @@ import java.util.Properties;
 
 public class APIUtils {
     RequestSpecification req;
+
     public RequestSpecification requestBuilder(String keyName) throws IOException {
         PrintStream stream = new PrintStream(new FileOutputStream("src/test/resources/loggingFile/logRunTimeFile.log"));
-        if (req==null) {
+        if (req == null) {
             req = new RequestSpecBuilder().
                     setBaseUri(getGlobalProp(keyName)).
                     addFilter(RequestLoggingFilter.logRequestTo(stream)).
@@ -22,6 +23,7 @@ public class APIUtils {
         }
         return req;
     }
+
     public static String getGlobalProp(String key) throws IOException {
         Properties p = new Properties();
         FileInputStream file = new FileInputStream("src/main/resources/global.properties");

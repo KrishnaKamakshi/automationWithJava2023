@@ -47,7 +47,7 @@ public class LoginWithParameter extends APIUtils {
     public void status_code_should_be(Integer int1) {
         // Write code here that turns the phrase above into concrete actions
         int statusCode = bookResponse.getStatusCode();
-        assertEquals(200,statusCode);
+        assertEquals(200, statusCode);
 
     }
 

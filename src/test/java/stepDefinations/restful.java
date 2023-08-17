@@ -21,13 +21,14 @@ public class restful extends APIUtils {
     RequestSpecification reqREST;
     Response reponseREST;
     Response reponseREST2;
+
     @Given("API got valid username and password")
     public void api_got_valid_username_and_password() throws IOException {
         // Write code here that turns the phrase above into concrete actions
         Restful restPOST = new Restful();
         restPOST.setUsername("admin");
         restPOST.setPassword("password123");
-        reqREST= given().spec(requestBuilder("restfulURL"))
+        reqREST = given().spec(requestBuilder("restfulURL"))
                 .log().all().body(restPOST).header("Content-Type", "application/json");
 
     }
@@ -44,7 +45,7 @@ public class restful extends APIUtils {
     public void token_should_be_generated_and_response_should_be_shown() {
         // Write code here that turns the phrase above into concrete actions throw new cucumber.api.PendingException();
         int statusCode = reponseREST.getStatusCode();
-        assertEquals(200,statusCode);
+        assertEquals(200, statusCode);
     }
 
 }

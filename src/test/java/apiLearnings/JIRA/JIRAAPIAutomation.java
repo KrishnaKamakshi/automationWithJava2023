@@ -19,15 +19,14 @@ public class JIRAAPIAutomation {
     String sessionCookie;
     int getJIRAID;
 
-	/**
+    /**
      * Login, Add a JIRA, Add a comment and Attachment - by using TestNG
      *
      * @return
      **/
 
     @BeforeTest
-    public void testConnectionWithJIRA()
-    {
+    public void testConnectionWithJIRA() {
         RestAssured.baseURI = "http://localhost:8083";
         SessionFilter session = new SessionFilter();
         String response = given().relaxedHTTPSValidation().header("Content-Type", "application/json").body("{\r\n" +
@@ -41,58 +40,51 @@ public class JIRAAPIAutomation {
     }
 
     @Test
-    public void testSession()
-    {
+    public void testSession() {
         //Map<String,String> m = new HashMap<String,String>();
         //m.put("Content-Type", "application/json");
         //m.put("cookie", "JESSIONID="+sessionCookie+"");
-        Response responforAddBug = given().header("Content-Type","application/json")
-                .cookie("JSESSIONID", sessionCookie).body(Payload.AddJIRABug("AttachmentBugTestQAQA")).log().all().when().post("/rest/api/2/issue")
-                ;
+        Response responforAddBug = given().header("Content-Type", "application/json")
+                .cookie("JSESSIONID", sessionCookie).body(Payload.AddJIRABug("AttachmentBugTestQAQA")).log().all().when().post("/rest/api/2/issue");
         System.out.println(responforAddBug.getBody().asPrettyString());
         getJIRAID = Integer.parseInt(responforAddBug.getBody().jsonPath().getString("id"));
         System.out.println(getJIRAID);
 
     }
 
-    @DataProvider(name="qaJIRATest")
-    public Object[] getDataJIRASummary()
-    {
-        return new Object[] {"QATest1"};
+    @DataProvider(name = "qaJIRATest")
+    public Object[] getDataJIRASummary() {
+        return new Object[]{"QATest1"};
     }
 
     @Test(dependsOnMethods = {"testSession"})
-    public void addCommentInBug()
-    {
+    public void addCommentInBug() {
         Response responforAddBug = given().log().all().header("content-type", "application/json").cookie("JSESSIONID", sessionCookie).body(Payload.addCommentToJIRA())
-                .when().post("/rest/api/2/issue/"+getJIRAID+"/comment");
+                .when().post("/rest/api/2/issue/" + getJIRAID + "/comment");
         int commentID = Integer.parseInt(responforAddBug.getBody().jsonPath().getString("id"));
         String commentString = responforAddBug.getBody().jsonPath().getString("body");
         System.out.println(responforAddBug.getBody().jsonPath().prettify());
     }
 
     @Test(dependsOnMethods = {"testSession"})
-    public void testAddAttachmentToABug()
-    {
+    public void testAddAttachmentToABug() {
         Response responeForAttachAttachment = given().log().all().header("X-Atlassian-Token", "no-check")
                 .header("Content-Type", "multipart/form-data")
                 .multiPart("file", new File("D:\\08072023\\testQAAutomation\\src\\test\\resources\\jira.txt")).cookie("JSESSIONID", sessionCookie)
-                .when().log().all().post("/rest/api/2/issue/"+getJIRAID+"/attachments");
+                .when().log().all().post("/rest/api/2/issue/" + getJIRAID + "/attachments");
         String commentStringAttachment = responeForAttachAttachment.getBody().asPrettyString();
         System.out.println(commentStringAttachment);
     }
 
     @Test
-    public void testGetAllIssuesType()
-    {
+    public void testGetAllIssuesType() {
         Response getAllIssueType = given().log().all().cookie("JSESSIONID", sessionCookie).when().get("/rest/api/2/issuetype");
         System.out.println(getAllIssueType.getBody().jsonPath().prettify());
 
     }
 
     @Test
-    public void testGetPriority()
-    {
+    public void testGetPriority() {
         Response getAllPriority = given().log().all().cookie("JSESSIONID", sessionCookie).when().get("/rest/api/2/priority");
         System.out.println(getAllPriority.getBody().jsonPath().prettify());
     }

@@ -1,13 +1,10 @@
 trigger:
-  - selenium-it-1008-az  # Or your desired branch
-
+  - ui_automation_1208  # Or your desired branch
 pool:
   vmImage: 'windows-latest'
-
-
 steps:
 - task: JavaToolInstaller@0
-  displayName: 'Use Java 20'
+  displayName: 'Installing Java 20 on Azure Windows Image'
   inputs:
     versionSpec: '20'
     jdkArchitectureOption: x64
@@ -20,11 +17,13 @@ steps:
     azureResourceGroupName: 'krishnaqa'
 
 - task: Maven@3
+  displayName: 'Maven execution started for Testng xml file'
   inputs:
     mavenPomFile: 'pom.xml'
-    goals: 'clean install test -DsuiteXmlFile=testng'
+    goals: 'clean install test -X -DsuiteXmlFile=testng'
     publishJUnitResults: false
 - task: PublishPipelineArtifact@1
+  displayName: 'Publishing the Artifacts'
   inputs:
     targetPath: '$(Pipeline.Workspace)'
     artifact: 'qakrishna'
@@ -42,7 +41,6 @@ steps:
   inputs:
     PathtoPublish: 'target/'
   condition: succeededOrFailed()
-
 - task: AmazonWebServices.aws-vsts-tools.S3Upload.S3Upload@1
   displayName: 'S3 Upload: Krishna'
   inputs:

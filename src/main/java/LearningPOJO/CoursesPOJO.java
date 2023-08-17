@@ -7,6 +7,7 @@ public class CoursesPOJO {
     private List<WebAutomation> webAutomation;
     private List<APIPojo> api;
     private List<Mobile> mobile;
+
     public List<WebAutomation> getWebAutomation() {
         return webAutomation;
     }
@@ -30,7 +31,6 @@ public class CoursesPOJO {
     public void setMobile(List<Mobile> mobile) {
         this.mobile = mobile;
     }
-
 
 
 }

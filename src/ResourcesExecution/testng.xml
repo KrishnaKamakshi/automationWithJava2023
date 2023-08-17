@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
+    <listeners>
+        <listener
+                class-name="listeners.ExtentReportListener" />
+        <listener
+                class-name="listeners.CustomListeners" />
+    </listeners>
     <test verbose="2" preserve-order="true"
-          name="D:/08072023/testQAAutomation/src/test/java/apiLearnings/JIRAAPIAutomation.java">
+          name="D:/08072023/mavenProjectTest/src/test/java/POJOLearnings/testReqResListUsersExample.java">
         <classes>
-            <class name="apiLearnings.POJOLearnings.testReqResListUsersExample"/>
+            <class name="apiLearnings.POJOLearnings.testReqResListUsersExample">
+                <methods>
+                    <include name="getTestListOfUsers"/>
+                </methods>
+            </class>
+            <class name="WebAutomationTestCases.DemoAutomation">
+                <methods>
+                    <include name="testUrlNavigation"/>
+                </methods>
+            </class>
+            <class name="WebAutomationTestCases.DemoAutomation2">
+                <methods>
+                    <include name="testUrlNavigationRahulShetty"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

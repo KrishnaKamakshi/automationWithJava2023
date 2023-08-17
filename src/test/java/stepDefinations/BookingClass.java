@@ -28,7 +28,7 @@ public class BookingClass extends APIUtils {
     RequestSpecification reqAuthToken;
     Response getAuthTokenWithPOST;
     Response getStatusAfterDeletionofABookingID;
-    String  getToken;
+    String getToken;
     int bookingID2;
 
     @Given("API got valid all validae details with {string}  {string} {string} {string} {string} {string}, {string}")
@@ -57,12 +57,13 @@ public class BookingClass extends APIUtils {
     public void validate_the_response() {
         // Write code here that turns the phrase above into concrete actions
         int statusCode = reponseRESTBooking.getStatusCode();
-        assertEquals(200,statusCode);
+        assertEquals(200, statusCode);
 
         String getBookingID = reponseRESTBooking.getBody().asPrettyString();
         System.out.println(getBookingID);
         bookingID2 = Integer.parseInt(reponseRESTBooking.getBody().jsonPath().getString("bookingid"));
     }
+
     @Given("Bearer Token is generated with using auth API with {string} and {string} and it is passed as cookie value")
     public void bearer_Token_is_generated_with_using_auth_API_with_and_and_it_is_passed_as_cookie_value(String username, String password) throws IOException {
         AuthBody bodyCreation = new AuthBody();
@@ -71,23 +72,25 @@ public class BookingClass extends APIUtils {
         reqAuthToken = given().spec(requestBuilder("restfulURL")).header("Content-Type", "application/json")
                 .body(bodyCreation).log().all();
     }
+
     @When("There is a bookingid created pass the above token as Cookie with the booking id as {int}")
     public void there_is_a_bookingid_created_pass_the_above_token_as_Cookie_with_the_booking_id_as(Integer bookingID2) throws IOException {
         // Write code here that turns the phrase above into concrete actions
         getAuthTokenWithPOST = reqAuthToken.when().log().all().post("/auth").then().extract().response();
         getToken = getAuthTokenWithPOST.getBody().asPrettyString();
         JsonPath jsPath = new JsonPath(getToken);
-        String tokenCreation   = jsPath.getString("token");
+        String tokenCreation = jsPath.getString("token");
         RequestSpecification requestPath = given().spec(requestBuilder("restfulURL")).header("Content-Type", "application/json")
-                .header("Cookie","token="+tokenCreation).log().all();
+                .header("Cookie", "token=" + tokenCreation).log().all();
         PrintStream stream = new PrintStream(new FileOutputStream("src/test/resources/loggingFile/logRunTimeFileRestFul.log"));
-        getStatusAfterDeletionofABookingID = requestPath.filter(RequestLoggingFilter.logRequestTo(stream)).when().log().all().delete("/booking/"+bookingID2).then().extract().response();
+        getStatusAfterDeletionofABookingID = requestPath.filter(RequestLoggingFilter.logRequestTo(stream)).when().log().all().delete("/booking/" + bookingID2).then().extract().response();
     }
+
     @Then("Delete the BookingID and validate the status code")
     public void delete_the_BookingID_and_validate_the_status_code() {
         // Write code here that turns the phrase above into concrete actions
         int statusCodeDeleted = getStatusAfterDeletionofABookingID.getStatusCode();
-        assertEquals(201,statusCodeDeleted);
+        assertEquals(201, statusCodeDeleted);
     }
 
 }

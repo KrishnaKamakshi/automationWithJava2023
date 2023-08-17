@@ -31,7 +31,7 @@ public class OAuth2 {
         String accessToken = jsonPath.getString("access_token");
         System.out.println(accessToken);
         String r2 = given().contentType("application/json").
-                        queryParams("access_token", accessToken).expect().defaultParser(Parser.JSON)
+                queryParams("access_token", accessToken).expect().defaultParser(Parser.JSON)
                 .when()
                 .get("https://rahulshettyacademy.com/getCourse.php")
                 .asString();
