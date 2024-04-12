@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="805c153b-d245-4460-a3b0-a7eaa83071f3" name="Changes" comment="Added Extend Report , Update the selenium-driver version to 4.11.0,">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/azure-pipelines.yml" beforeDir="false" afterPath="$PROJECT_DIR$/azure-pipelines.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebAutomationTestCases/DemoAutomation2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebAutomationTestCases/DemoAutomation2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/resources/TestExecutionReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/TestExecutionReport.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +77,7 @@
     "TestNG.D:/08072023/githubCode/automationWithJava/testng.xml.executor": "Run",
     "TestNG.DemoAutomation.testUrlNavigation.executor": "Run",
     "TestNG.DemoAutomation2.testUrlNavigationRahulShetty.executor": "Run",
+    "TestNG.testDemoFinal.executor": "Run",
     "TestNG.testDemoFinal.test1.executor": "Run",
     "git-widget-placeholder": "ui__automation__1208-fix",
     "ignore.virus.scanning.warn.message": "true",
