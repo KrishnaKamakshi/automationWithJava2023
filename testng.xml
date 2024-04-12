@@ -12,9 +12,9 @@
                     <include name="getTestListOfUsers"/>
                 </methods>
             </class>
-            <class name="WebAutomationTestCases.demoautomation">
+            <class name="WebAutomationTestCases.testDemoFinal">
                 <methods>
-                    <include name="testUrlNavigation"/>
+                    <include name="testDemoFinal"/>
                 </methods>
             </class>
         </classes>

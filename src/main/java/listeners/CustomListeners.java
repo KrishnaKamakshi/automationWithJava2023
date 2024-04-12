@@ -27,7 +27,7 @@ public class CustomListeners implements ITestListener {
     public void onTestFailure(ITestResult result) {
         // TODO Auto-generated method stub
         log.info(result.getMethod().getMethodName());
-        screen.savescreenshotFailure();
+        //screen.savescreenshotFailure();
 
     }@Override
     public void onTestSkipped(ITestResult Result) {

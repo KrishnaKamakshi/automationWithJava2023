@@ -1,9 +1,8 @@
 package UtilsInformation;
 
-import Config.DriverConfig;
+import driverClass.DriverFinal;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -11,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 
-public class WebUtils extends DriverConfig {
+public class WebUtils extends DriverFinal {
 
     public static void getURLWebsite(String url) {
         driver.get(url);
@@ -28,27 +27,21 @@ public class WebUtils extends DriverConfig {
     public static String getTextFromAttributeValue(String valueText) {
         return driver.findElement(By.id(valueText)).getText();
     }
-
     public static String getTextFromAttributeValueXpath(String valueText) {
         return driver.findElement(By.xpath(valueText)).getText();
     }
-
     public static String getTextFromAttributeValueText(String valueText) {
         return driver.findElement(By.xpath(valueText)).getText();
     }
-
     public static int gettingTheSize(String valueOfSize) {
         return driver.findElements(By.xpath(valueOfSize)).size();
     }
-
     public static String getTheTitle() {
         return driver.getTitle();
     }
-
     public static List<WebElement> getElementsByXpathWood(String valueOf) {
         return driver.findElements(By.xpath(valueOf));
     }
-
     public static List<WebElement> getElementsByXpathElements(String valueOf) {
         return driver.findElements(By.xpath(valueOf));
     }
