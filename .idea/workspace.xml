@@ -6,22 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="805c153b-d245-4460-a3b0-a7eaa83071f3" name="Changes" comment="Added Extend Report , Update the selenium-driver version to 4.11.0,">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EnumClassConstants/APIResources.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UtilsInformation/DriverClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UtilsInformation/WebUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilsInformation/WebUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaPrograms/HashMap2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaPrograms/HashMap2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaPrograms/RemoveDuplicateElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaPrograms/RemoveDuplicateElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/listeners/CustomListeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/listeners/CustomListeners.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseClass/BaseTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MavenTesting/testQAAutomation/TestSeleniumAutomation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MavenTesting/testQAAutomation/TestSeleniumAutomation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WebAutomationTestCases/DemoAutomation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebAutomationTestCases/DemoAutomation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WebAutomationTestCases/DemoAutomation2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebAutomationTestCases/DemoAutomation2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinations/BookingClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinations/BookingClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/loggingFile/logRunTimeFileRestFul.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/loggingFile/logRunTimeFileRestFul.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/TestExecutionReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/TestExecutionReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +20,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="ui_automation_1208" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -86,7 +75,7 @@
     "TestNG.DemoAutomation.testUrlNavigation.executor": "Run",
     "TestNG.DemoAutomation2.testUrlNavigationRahulShetty.executor": "Run",
     "TestNG.testDemoFinal.test1.executor": "Run",
-    "git-widget-placeholder": "ui__automation__1208",
+    "git-widget-placeholder": "ui__automation__1208-fix",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "corretto-1.8",
     "kotlin-language-version-configured": "true",
@@ -94,7 +83,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "android.project.structure"
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
