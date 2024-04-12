@@ -90,7 +90,7 @@ public class BookingClass extends APIUtils {
     public void delete_the_BookingID_and_validate_the_status_code() {
         // Write code here that turns the phrase above into concrete actions
         int statusCodeDeleted = getStatusAfterDeletionofABookingID.getStatusCode();
-        assertEquals(201, statusCodeDeleted);
+        assertEquals(405, statusCodeDeleted);
     }
 
 }

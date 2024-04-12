@@ -1,6 +1,5 @@
 package WebAutomationTestCases;
 
-import BaseClass.BaseTest;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;

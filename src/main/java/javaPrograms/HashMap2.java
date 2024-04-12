@@ -12,7 +12,6 @@ public class HashMap2 {
 		newT.put(1, "Krishna");
 		newT.put(2, "Krishna2");
 		
-		
 		HashMap<Integer, String> newT2 = new HashMap<Integer, String>();
 		newT2.put(1, "Krishna3233");
 		newT2.put(2, "Krishna2");

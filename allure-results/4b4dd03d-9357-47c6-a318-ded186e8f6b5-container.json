@@ -1,0 +1,1 @@
+{"uuid":"4b4dd03d-9357-47c6-a318-ded186e8f6b5","name":"All Test Suite","children":["6548f2d7-cc3d-4a35-bbf0-8336fc92a29e"],"befores":[{"name":"setupChrome","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1712884542412,"stop":1712884547124}],"afters":[],"start":1712884542364,"stop":1712884551904}

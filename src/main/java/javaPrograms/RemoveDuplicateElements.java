@@ -14,7 +14,6 @@ public class RemoveDuplicateElements {
 		LinkedHashSet<Integer> n = new LinkedHashSet<Integer>(numbers);
 		ArrayList<Integer> numbers1 = new ArrayList<Integer>(n);
 		System.out.println(numbers1);
-		
 		ArrayList<Integer> numbers2 = new ArrayList<Integer>(Arrays.asList(2,2,3,4,1,2,3,4,5,11,1,1,3,2,1,11,1,1,1,1,1,1,1));
 		System.out.println(numbers2.stream().distinct().collect(Collectors.toList()));
 	}
