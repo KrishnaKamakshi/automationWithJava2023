@@ -3,51 +3,51 @@ trigger:
 pool:
   vmImage: 'windows-latest'
 steps:
-- task: JavaToolInstaller@0
-  displayName: 'Installing Java 20 on Azure Windows Image'
-  inputs:
-    versionSpec: '20'
-    jdkArchitectureOption: x64
-    jdkSourceOption: AzureStorage
-    azureResourceManagerEndpoint: 'Free Trial (d6523d07-8ecf-4b92-a156-6389c1759469)'
-    azureStorageAccountName: 'krishnaqa'
-    azureContainerName: 'testjava'
-    azureCommonVirtualFile: 'jdk-20.0.2_windows-x64_bin.zip'
-    jdkDestinationDirectory: src/resources
-    azureResourceGroupName: 'krishnaqa'
+  - task: JavaToolInstaller@0
+    displayName: 'Installing Java 20 on Azure Windows Image'
+    inputs:
+      versionSpec: '20'
+      jdkArchitectureOption: x64
+      jdkSourceOption: AzureStorage
+      azureResourceManagerEndpoint: 'qakrishna'
+      azureStorageAccountName: 'krishnaqa'
+      azureContainerName: 'testjava'
+      azureCommonVirtualFile: 'jdk-20.0.2_windows-x64_bin.zip'
+      jdkDestinationDirectory: src/resources
+      azureResourceGroupName: 'krishnaqa'
 
-- task: Maven@3
-  displayName: 'Maven execution started for Testng xml file'
-  inputs:
-    mavenPomFile: 'pom.xml'
-    goals: 'clean install test -X -DsuiteXmlFile=testng'
-    publishJUnitResults: false
-- task: PublishPipelineArtifact@1
-  displayName: 'Publishing the Artifacts'
-  inputs:
-    targetPath: '$(Pipeline.Workspace)'
-    artifact: 'qakrishna'
-    publishLocation: 'pipeline'
-- task: CopyFiles@2
-  displayName: 'Copy Files to: src/resources'
-  inputs:
+  - task: Maven@3
+    displayName: 'Maven execution started for Testng xml file'
+    inputs:
+      mavenPomFile: 'pom.xml'
+      goals: 'clean install test -X -DsuiteXmlFile=testng'
+      publishJUnitResults: false
+  - task: PublishPipelineArtifact@1
+    displayName: 'Publishing the Artifacts'
+    inputs:
+      targetPath: '$(Pipeline.Workspace)'
+      artifact: 'qakrishna'
+      publishLocation: 'pipeline'
+  - task: CopyFiles@2
+    displayName: 'Copy Files to: src/resources'
+    inputs:
       SourceFolder: target/
       Contents: '**/*.jar'
       TargetFolder: src/resources
-  condition: succeededOrFailed()
+    condition: succeededOrFailed()
 
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: drop'
-  inputs:
-    PathtoPublish: 'target/'
-  condition: succeededOrFailed()
-- task: AmazonWebServices.aws-vsts-tools.S3Upload.S3Upload@1
-  displayName: 'S3 Upload: Krishna'
-  inputs:
-    awsCredentials: krishnaawsaccess
-    regionName: 'us-west-1'
-    bucketName: qakrishnas3
-    sourceFolder: target/
-    createBucket: true
-    keyManagement: awsManaged
-    encryptionAlgorithm: AES256
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact: drop'
+    inputs:
+      PathtoPublish: 'target/'
+    condition: succeededOrFailed()
+  - task: AmazonWebServices.aws-vsts-tools.S3Upload.S3Upload@1
+    displayName: 'S3 Upload: Krishna'
+    inputs:
+      awsCredentials: krishnaawsaccess
+      regionName: 'us-west-1'
+      bucketName: qakrishnas3
+      sourceFolder: target/
+      createBucket: true
+      keyManagement: awsManaged
+      encryptionAlgorithm: AES256

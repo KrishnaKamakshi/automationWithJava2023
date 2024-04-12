@@ -17,7 +17,7 @@
                     <version>3.1.2</version>
                     <configuration>
                         <suiteXmlFiles>
-                            <suiteXmlFile>src/ResourcesExecution/${suiteXmlFile}.xml</suiteXmlFile>
+                            <suiteXmlFile>src/ResourcesExecution/testng.xml</suiteXmlFile>
                         </suiteXmlFiles>
                     </configuration>
                 </plugin>
@@ -39,11 +39,6 @@
             <artifactId>selenium-java</artifactId>
             <version>4.11.0</version>
         </dependency>
-        <!--<dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>5.8.0</version>
-        </dependency> -->
         <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
         <dependency>
             <groupId>io.rest-assured</groupId>

@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="805c153b-d245-4460-a3b0-a7eaa83071f3" name="Changes" comment="Added Extend Report , Update the selenium-driver version to 4.11.0,">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebAutomationTestCases/DemoAutomation2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebAutomationTestCases/DemoAutomation2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/resources/TestExecutionReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/TestExecutionReport.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +77,7 @@
     "TestNG.D:/08072023/githubCode/automationWithJava/testng.xml.executor": "Run",
     "TestNG.DemoAutomation.testUrlNavigation.executor": "Run",
     "TestNG.DemoAutomation2.testUrlNavigationRahulShetty.executor": "Run",
+    "TestNG.testDemoFinal.executor": "Run",
     "TestNG.testDemoFinal.test1.executor": "Run",
     "git-widget-placeholder": "ui__automation__1208-fix",
     "ignore.virus.scanning.warn.message": "true",
@@ -109,7 +113,7 @@
       <command value="mvn clean install test" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.D:/08072023/githubCode/automationWithJava/testng.xml">
+  <component name="RunManager" selected="TestNG.testDemoFinal">
     <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="4" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
@@ -167,7 +171,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoAutomation2.testUrlNavigationRahulShetty" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testDemoFinal" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mavenProjectTest" />
       <extension name="coverage">
         <pattern>
@@ -176,9 +180,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="WebAutomationTestCases" />
-      <option name="MAIN_CLASS_NAME" value="WebAutomationTestCases.DemoAutomation2" />
-      <option name="METHOD_NAME" value="testUrlNavigationRahulShetty" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="WebAutomationTestCases.testDemoFinal" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -205,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.testDemoFinal" />
         <item itemvalue="TestNG.D:/08072023/githubCode/automationWithJava/testng.xml" />
         <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="Cucumber Java.Feature: Login" />
         <item itemvalue="TestNG.testDemoFinal.test1" />
-        <item itemvalue="TestNG.DemoAutomation2.testUrlNavigationRahulShetty" />
       </list>
     </recent_temporary>
   </component>
@@ -462,7 +465,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692300144174</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Added Extend Report , Update the selenium-driver version to 4.11.0,">
+      <option name="closed" value="true" />
+      <created>1712913007376</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1712913007376</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
