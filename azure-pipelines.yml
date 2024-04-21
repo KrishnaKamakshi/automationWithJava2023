@@ -1,5 +1,5 @@
 trigger:
-  - ui_automation_1208  # Or your desired branch
+  - designPatterns-2004  # Or your desired branch
 pool:
   vmImage: 'windows-latest'
 steps:
