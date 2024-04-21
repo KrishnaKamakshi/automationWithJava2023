@@ -23,7 +23,6 @@ public class APIUtils {
         }
         return req;
     }
-
     public static String getGlobalProp(String key) throws IOException {
         Properties p = new Properties();
         FileInputStream file = new FileInputStream("src/main/resources/global.properties");
