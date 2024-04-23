@@ -11,8 +11,5 @@ public class TestSeleniumAutomation {
         WebDriver driver = new ChromeDriver();
         driver.get("https://google.com");
         Thread.sleep(10);
-
-
     }
-
 }

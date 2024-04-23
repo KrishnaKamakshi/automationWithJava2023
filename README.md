@@ -12,3 +12,5 @@
                 Page Object Model - Done
                 AWS Instance Creation and uploading the Reports to S3 Bucket - Done
                 Add Screenshots to Allure Report and add directory for taking the screenshots - Done
+                Design Patterns - POM, Method Chaining, SingleTon, Factory, Abstract factory
+                Pages - added, Utility 

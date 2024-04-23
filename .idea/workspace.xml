@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="805c153b-d245-4460-a3b0-a7eaa83071f3" name="Changes" comment="Added Extend Report , Update the selenium-driver version to 4.11.0,">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WebAutomationTestCases/DemoAutomation2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebAutomationTestCases/DemoAutomation2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/TestExecutionReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/TestExecutionReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,13 +17,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="ui_automation_1208" />
+        <entry key="$PROJECT_DIR$" value="ui_automation_1208-fix" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -77,34 +76,42 @@
     "TestNG.D:/08072023/githubCode/automationWithJava/testng.xml.executor": "Run",
     "TestNG.DemoAutomation.testUrlNavigation.executor": "Run",
     "TestNG.DemoAutomation2.testUrlNavigationRahulShetty.executor": "Run",
+    "TestNG.MultiPlatformExecution.executor": "Run",
+    "TestNG.MultiPlatformExecutionTests.executor": "Run",
     "TestNG.testDemoFinal.executor": "Run",
     "TestNG.testDemoFinal.test1.executor": "Run",
-    "git-widget-placeholder": "ui__automation__1208-fix",
+    "TestNG.testLoginAndProductSearch.executor": "Run",
+    "TestNG.testMultiThread.executor": "Run",
+    "TestNG.testSingleTonLazyInit.executor": "Run",
+    "git-widget-placeholder": "designPatterns-2004",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "corretto-1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/08072023/githubCode/automationWithJava/src/test/java/POJOLearnings",
+    "last_opened_file_path": "D:/08072023/githubCode/automationWithJava/src/main",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+    "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\08072023\githubCode\automationWithJava\src\main" />
       <recent name="D:\08072023\githubCode\automationWithJava\src\test\java\POJOLearnings" />
       <recent name="D:\08072023\githubCode\automationWithJava\src\main\java\RestReqWebsiteAPIs" />
       <recent name="D:\08072023\githubCode\automationWithJava\src\ResourcesExecution" />
       <recent name="D:\08072023\githubCode\automationWithJava\src\main\java\web" />
-      <recent name="D:\08072023\githubCode\automationWithJava\src\main\java\AllPOJODefinations" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\08072023\githubCode\automationWithJava\src\main\resources" />
       <recent name="D:\08072023\githubCode\automationWithJava\src\test\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Factory" />
+      <recent name="MultiPlatformExecution" />
+      <recent name="WebPages" />
+      <recent name="FlutenPatterns" />
       <recent name="RestReqWebsiteAPIs" />
-      <recent name="javaPrograms" />
-      <recent name="WebAutomationTestCases" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -113,41 +120,7 @@
       <command value="mvn clean install test" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.testDemoFinal">
-    <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="4" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
-      <option name="GLUE" value="stepDefinations" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="mavenProjectTest" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: Login" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mavenProjectTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumberRun.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cucumberRun" />
-      <option name="MAIN_CLASS_NAME" value="cucumberRun.TestRunner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.MultiPlatformExecutionTests">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="automationWithJava" />
       <method v="2">
@@ -161,26 +134,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="D:/08072023/githubCode/automationWithJava/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mavenProjectTest" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testDemoFinal" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MultiPlatformExecution" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mavenProjectTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="WebAutomationTestCases.*" />
+          <option name="PATTERN" value="MultiPlatformExecution.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="WebAutomationTestCases" />
-      <option name="MAIN_CLASS_NAME" value="WebAutomationTestCases.testDemoFinal" />
+      <option name="PACKAGE_NAME" value="MultiPlatformExecution" />
+      <option name="MAIN_CLASS_NAME" value="MultiPlatformExecution.MultiPlatformExecution" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -188,18 +151,68 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testDemoFinal.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MultiPlatformExecutionTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mavenProjectTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="WebAutomationTestCases.*" />
+          <option name="PATTERN" value="MultiPlatformExecution.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="WebAutomationTestCases" />
-      <option name="MAIN_CLASS_NAME" value="WebAutomationTestCases.testDemoFinal" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="MultiPlatformExecution" />
+      <option name="MAIN_CLASS_NAME" value="MultiPlatformExecution.MultiPlatformExecutionTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testMultiThread" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mavenProjectTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SingleTonPatternTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SingleTonPatternTest" />
+      <option name="MAIN_CLASS_NAME" value="SingleTonPatternTest.testMultiThread" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testSingleTonLazyInit" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mavenProjectTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SingleTonPatternTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SingleTonPatternTest" />
+      <option name="MAIN_CLASS_NAME" value="SingleTonPatternTest.testSingleTonLazyInit" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testloginandproductsearch" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mavenProjectTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="designPatternTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="designPatternTest" />
+      <option name="MAIN_CLASS_NAME" value="designPatternTest.testloginandproductsearch" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -208,11 +221,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.testDemoFinal" />
-        <item itemvalue="TestNG.D:/08072023/githubCode/automationWithJava/testng.xml" />
-        <item itemvalue="JUnit.TestRunner" />
-        <item itemvalue="Cucumber Java.Feature: Login" />
-        <item itemvalue="TestNG.testDemoFinal.test1" />
+        <item itemvalue="TestNG.MultiPlatformExecutionTests" />
+        <item itemvalue="TestNG.MultiPlatformExecution" />
+        <item itemvalue="TestNG.testMultiThread" />
+        <item itemvalue="TestNG.testSingleTonLazyInit" />
+        <item itemvalue="TestNG.testloginandproductsearch" />
       </list>
     </recent_temporary>
   </component>
@@ -510,11 +523,6 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/src/test/java/POJOLearnings/HmacGenertor.java" line="22">
-        <watch expression="newobj" language="JAVA" />
-      </inline-watch>
-    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

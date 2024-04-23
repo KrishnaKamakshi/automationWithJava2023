@@ -12,9 +12,9 @@
                     <include name="getTestListOfUsers"/>
                 </methods>
             </class>
-            <class name="WebAutomationTestCases.testDemoFinal">
+            <class name="designPatternTest.testBookDesigWithFDP">
                 <methods>
-                    <include name="testDemoFinal"/>
+                    <include name="testFlightFooter"/>
                 </methods>
             </class>
         </classes>
