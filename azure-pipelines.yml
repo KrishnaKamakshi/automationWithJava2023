@@ -20,7 +20,7 @@ steps:
     displayName: 'Maven execution started for Testng xml file'
     inputs:
       mavenPomFile: 'pom.xml'
-      goals: 'clean install test -X -DsuiteXmlFile=testng'
+      goals: 'clean install test -X -DsuiteXmlFile=testng2'
       publishJUnitResults: false
   - task: PublishPipelineArtifact@1
     displayName: 'Publishing the Artifacts'
